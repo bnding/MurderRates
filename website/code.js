@@ -1,0 +1,1 @@
+alert(cityWeapons.Alaska.Anchorage.Drowning)
