@@ -21,7 +21,7 @@ $(document).ready(function () {
         .rangeRound([height, 0]);
 
     d3.json("datasets/CrimesMonth.json").then(function (data) {
-        x.domain(data.map(function (d) {
+        x.domain(data.products.map(function (d) {
             return d.Run;
         }));
         y.domain([0, d3.max(data, function (d) {
