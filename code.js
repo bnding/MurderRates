@@ -1,5 +1,6 @@
 $(document).ready(function () {
     // $("#title").append(JSON.stringify(data))
+
     var svg = d3.select("svg"),
         margin = {
             top: 20,
@@ -11,21 +12,23 @@ $(document).ready(function () {
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var parseTime = d3.timeParse("%d-%b-%y");
+    var barWidth = 30;
+
 
     var x = d3.scaleBand()
+        .domain(["January", "February", "March", "April", "May", "June", "July", "August", "September", 
+                    "October", "November", "December"])
         .rangeRound([0, width])
-        .padding(0.1);
+        .padding(0.48);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
 
-    d3.json("datasets/CrimesMonth.json").then(function (data) {
-        x.domain(data.products.map(function (d) {
-            return d.Run;
-        }));
+    function draw(data) {
+        // alert(data)
+
         y.domain([0, d3.max(data, function (d) {
-            return Number(d.Speed);
+            return Number(d.Freq);
         })]);
 
         g.append("g")
@@ -40,23 +43,23 @@ $(document).ready(function () {
             .attr("y", 6)
             .attr("dy", "0.71em")
             .attr("text-anchor", "end")
-            .text("Speed");
+            .text("Frequency");
 
         g.selectAll(".bar")
             .data(data)
             .enter().append("rect")
             .attr("class", "bar")
-            .attr("x", function (d) {
-                return x(d.Run);
-            })
-            .attr("y", function (d) {
-                return y(Number(d.Speed));
-            })
-            .attr("width", x.bandwidth())
-            .attr("height", function (d) {
-                return height - y(Number(d.Speed));
-            });
-    });
+            .attr("x", function (d) { return x(d.Month); })
+            .attr("width", barWidth)
+            .attr("y", function (d) { return y(d.Freq); })
+            .attr("height", function (d) { return height - y(d.Freq); });
+        
+
+
+    }
+
+    draw(crimesMonth);
+
 
 
 
