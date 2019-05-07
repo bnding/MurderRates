@@ -1,0 +1,1 @@
+[{"Victim Sex": "Female", "Freq": 143345}, {"Victim Sex": "Male", "Freq": 494125}, {"Victim Sex": "Unknown", "Freq": 984}]
