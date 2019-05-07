@@ -26,8 +26,8 @@ $(document).ready(function () {
 
     /*
     * Bar Graph Drawer 
-    * Function can be mad modular by renaming data to [{"x":"xData", "y":"yData"}]
-    * This will chang eit so we don't need to use d.Month but d.x instead
+    * Function can be made modular by renaming data to [{"x":"xData", "y":"yData"}]
+    * This will change it so we don't need to use d.Month but d.x instead
     */
     function draw(data) {
         x.domain(data.map(function (d) {
