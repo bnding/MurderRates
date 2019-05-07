@@ -148,7 +148,7 @@ def murderPerpAge():
 	# file.close()
 
 	freq1 = collections.Counter(df['Perpetrator Age'])
-	freq = [{'Perpetrator Age': m, 'Freq': f} for m, f in freq1.items()]
+	freq = [{'Perpetrator_Age': m, 'Freq': f} for m, f in freq1.items()]
 	file = open("MurderPerpAge.js", "w+")
 	file.write(json.dumps(freq))
 	file.close()
@@ -184,7 +184,7 @@ def murderRatePerpAgeDec():
 			freq.update(key)
 
 	#print(freq)
-	freq1 = [{'Decade': d, 'Perpetrator Age': [{'Perpetrator Age': pa, 'Freq': f} for pa, f in ss.items()]} for d, ss in freq.items()]
+	freq1 = [{'Decade': d, 'Perpetrator_Age': [{'Perpetrator_Age': pa, 'Freq': f} for pa, f in ss.items()]} for d, ss in freq.items()]
 	file = open("MurderRatePerpAgeDec.js", "w+")
 	file.write(json.dumps(freq1))
 	file.close()
@@ -212,7 +212,7 @@ def murderPerpAgeState():
 			freq.update(key)
 
 	#print(freq)
-	freq1 = [{'State': s, 'Perpetrator Age': [{'Perpetrator Age': pa, 'Freq': f} for pa, f in ss.items()]} for s, ss in freq.items()]
+	freq1 = [{'State': s, 'Perpetrator_Age': [{'Perpetrator_Age': pa, 'Freq': f} for pa, f in ss.items()]} for s, ss in freq.items()]
 
 	file = open("MurderPerpAgeState.js", "w+")
 	file.write(json.dumps(freq1))
@@ -235,7 +235,7 @@ def murderVicAge():
 
 	#print(freq)
 	freq1 = collections.Counter(df['Victim Age'])
-	freq = [{'Victim Age': m, 'Freq': f} for m, f in freq1.items()]
+	freq = [{'Victim_Age': m, 'Freq': f} for m, f in freq1.items()]
 
 	file = open("MurderVicAge.js", "w+")
 	file.write(json.dumps(freq))
@@ -272,7 +272,7 @@ def murderRateVicAgeDec():
 			freq.update(key)
 
 	#print(freq)
-	freq1 = [{'Decade': d, 'Victim Age': [{'Victim Age': va, 'Freq': f} for va, f in ss.items()]} for d, ss in freq.items()]
+	freq1 = [{'Decade': d, 'Victim_Age': [{'Victim_Age': va, 'Freq': f} for va, f in ss.items()]} for d, ss in freq.items()]
 	file = open("MurderRateVicAgeDec.js", "w+")
 	file.write(json.dumps(str(freq1)))
 	file.close()
@@ -300,7 +300,7 @@ def murderVicAgeState():
 			freq.update(key)
 
 	#print(freq)
-	freq1 = [{'State': s, 'Victim Age': [{'Victim Age': va, 'Freq': f} for va, f in ss.items()]} for s, ss in freq.items()]
+	freq1 = [{'State': s, 'Victim_Age': [{'Victim_Age': va, 'Freq': f} for va, f in ss.items()]} for s, ss in freq.items()]
 	file = open("MurderVicAgeState.js", "w+")
 	file.write(json.dumps(freq1))
 	file.close()
@@ -357,7 +357,7 @@ def perpSex():
 	#print(perpSexDict)
 
 	freq1 = collections.Counter(df['Perpetrator Sex'])
-	freq = [{'Perpetrator Sex': m, 'Freq': f} for m, f in freq1.items()]
+	freq = [{'Perpetrator_Sex': m, 'Freq': f} for m, f in freq1.items()]
 
 	file = open("PerpSex.js", "w+")
 	file.write(json.dumps(freq))
@@ -380,7 +380,7 @@ def perpRace():
 	# 		perpRaceDict.update(s)
 	#print(perpRaceDict)
 	freq1 = collections.Counter(df['Perpetrator Race'])
-	freq = [{'Perpetrator Race': m, 'Freq': f} for m, f in freq1.items()]
+	freq = [{'Perpetrator_Race': m, 'Freq': f} for m, f in freq1.items()]
 
 	file = open("PerpRace.js", "w+")
 	file.write(json.dumps(freq))
@@ -404,7 +404,7 @@ def victSex():
 	# 		victSexDict.update(s)
 	#print(victSexDict)
 	freq1 = collections.Counter(df['Victim Sex'])
-	freq = [{'Victim Sex': m, 'Freq': f} for m, f in freq1.items()]
+	freq = [{'Victim_Sex': m, 'Freq': f} for m, f in freq1.items()]
 
 	file = open("VictSex.js", "w+")
 	file.write(json.dumps(freq))
@@ -428,7 +428,7 @@ def victRace():
 	#print(victRaceDict)
 
 	freq1 = collections.Counter(df['Victim Race'])
-	freq = [{'Victim Race': m, 'Freq': f} for m, f in freq1.items()]
+	freq = [{'Victim_Race': m, 'Freq': f} for m, f in freq1.items()]
 
 	file = open("VictRace.js", "w+")
 	file.write(json.dumps(freq))
@@ -457,7 +457,7 @@ def stateAgen():
 			yrStateDict.update(s)
 
 	#print(yrStateDict)
-	freq1 = [{'State': s, 'Agency Name': [{'Agency Name': an, 'Freq': f} for an, f in ss.items()]} for s, ss in yrStateDict.items()]
+	freq1 = [{'State': s, 'Agency_Name': [{'Agency_Name': an, 'Freq': f} for an, f in ss.items()]} for s, ss in yrStateDict.items()]
 	file = open("StateAgen.js", "w+")
 	file.write(json.dumps(freq1))
 	file.close()  
@@ -491,7 +491,7 @@ def weaponPerpSex():
 	# file.write(json.dumps(yrStateDict))
 	# file.close()  
 
-	freq1 = [{'Weapon': w, 'Perpetrator Sex': [{'Perpetrator Sex': ps, 'Freq': f} for ps, f in ss.items()]} for w, ss in yrStateDict.items()]
+	freq1 = [{'Weapon': w, 'Perpetrator_Sex': [{'Perpetrator_Sex': ps, 'Freq': f} for ps, f in ss.items()]} for w, ss in yrStateDict.items()]
 	file = open("WeaponPerpSex.js", "w+")
 	file.write(json.dumps(freq1))
 	file.close()
