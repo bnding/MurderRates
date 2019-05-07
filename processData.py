@@ -121,7 +121,7 @@ def raceWeapon():
 			freq.update(key)
 
 	#print(freq)
-	freq1 = [{'Perpetrator Race': pr, 'Weapon': [{'Weapon': w, 'Freq': f} for w, f in ss.items()]} for pr, ss in freq.items()]
+	freq1 = [{'Perpetrator_Race': pr, 'Weapon': [{'Weapon': w, 'Freq': f} for w, f in ss.items()]} for pr, ss in freq.items()]
 	file = open("RaceWeapon.js", "w+")
 	file.write(json.dumps(freq1))
 	file.close()
