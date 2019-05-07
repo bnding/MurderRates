@@ -3,9 +3,9 @@ $(document).ready(function () {
 
     var svg = d3.select("svg"),
         margin = {
-            top: 20,
+            top: 50,
             right: 20,
-            bottom: 30,
+            bottom: 40,
             left: 50
         },
         width = +svg.attr("width") - margin.left - margin.right,
@@ -40,17 +40,43 @@ $(document).ready(function () {
 
         g.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x))
+            .call(d3.axisBottom(x));
+
+        // text label for the x axis
+        // svg.append("text")             
+        //     .attr("transform",
+        //         "translate(" + (width/2 + 15) + " ," + 
+        //                     (height + margin.top + 36) + ")")
+        //     .attr("text-anchor", "top")
+        //     .text("Month");
 
         g.append("g")
-            .call(d3.axisLeft(y))
-            .append("text")
-            .attr("fill", "#000")
+            .call(d3.axisLeft(y));
+            // .append("text")
+            // .attr("fill", "#000")
+            // .attr("transform", "rotate(-90)")
+            // .attr("y", 6)
+            // .attr("dy", "0.71em")
+            // .attr("text-anchor", "end")
+            // .text("Frequency");
+
+        // text label for the y axis
+        svg.append("text")
             .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", "0.71em")
-            .attr("text-anchor", "end")
+            .attr("y", margin.left)
+            .attr("x", (height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
             .text("Frequency");
+
+        svg.append("text")
+            .attr("x", (width / 1.8))             
+            .attr("y", margin.top / 2)
+            .attr("text-anchor", "middle")  
+            .style("font-size", "16px") 
+            .style("text-decoration", "underline")  
+            .style('font-family', '"Open Sans", sans-serif')
+            .text("Crimes Committed per Month");
 
         g.selectAll(".bar")
             .data(data)
@@ -59,7 +85,8 @@ $(document).ready(function () {
             .attr("x", function (d) { return x(d.Month); })
             .attr("width", x.bandwidth())
             .attr("y", function (d) { return y(d.Freq); })
-            .attr("height", function (d) { return height - y(d.Freq); });
+            .attr("height", function (d) { return height - y(d.Freq); })
+            .attr("fill", "#69b3a2");
     }
 
     draw(crimesMonth);
