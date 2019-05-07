@@ -24,8 +24,6 @@ $(document).ready(function () {
         .rangeRound([height, 0]);
 
     function draw(data) {
-        
-
         y.domain([0, d3.max(data, function (d) {
             return Number(d.Freq);
         })]);
@@ -52,15 +50,9 @@ $(document).ready(function () {
             .attr("width", barWidth)
             .attr("y", function (d) { return y(d.Freq); })
             .attr("height", function (d) { return height - y(d.Freq); });
-        
-
-
     }
 
     draw(crimesMonth);
-
-
-
 
 })
 
