@@ -12,20 +12,19 @@ $(document).ready(function () {
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var barWidth = 30;
-
+    var barWidth = width/24;
 
     var x = d3.scaleBand()
         .domain(["January", "February", "March", "April", "May", "June", "July", "August", "September", 
                     "October", "November", "December"])
         .rangeRound([0, width])
-        .padding(0.48);
+        .padding(0.5);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
 
     function draw(data) {
-        // alert(data)
+        
 
         y.domain([0, d3.max(data, function (d) {
             return Number(d.Freq);
