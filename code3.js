@@ -31,7 +31,7 @@ $(document).ready(function () {
     */
     function draw(data) {
         x.domain(data.map(function (d) {
-            return d.Perpetrator_Race;
+            return d.Victim_Race;
         }));
 
         y.domain([0, d3.max(data, function (d) {
@@ -76,20 +76,20 @@ $(document).ready(function () {
             .style("font-size", "16px") 
             .style("text-decoration", "underline")  
             .style('font-family', '"Open Sans", sans-serif')
-            .text("Crimes Committed Based on Perpetrator's Race");
+            .text("Crimes Committed Based on Victim's Race");
 
         g.selectAll(".bar")
             .data(data)
             .enter().append("rect")
             .attr("class", "bar")
-            .attr("x", function (d) { return x(d.Perpetrator_Race); })
+            .attr("x", function (d) { return x(d.Victim_Race); })
             .attr("width", x.bandwidth())
             .attr("y", function (d) { return y(d.Freq); })
             .attr("height", function (d) { return height - y(d.Freq); })
             .attr("fill", "#69b3a2");
     }
 
-    draw(perpRace);
+    draw(victRace);
 
 })
 
