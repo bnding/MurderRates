@@ -1,1 +1,1 @@
-[{"Perpetrator_Race": "Native American/Alaska Native", "Freq": 3602}, {"Perpetrator_Race": "White", "Freq": 218243}, {"Perpetrator_Race": "Unknown", "Freq": 196047}, {"Perpetrator_Race": "Black", "Freq": 214516}, {"Perpetrator_Race": "Asian/Pacific Islander", "Freq": 6046}]
+var perpRace = [{"Perpetrator_Race": "Native American/Alaska Native", "Freq": 3602}, {"Perpetrator_Race": "White", "Freq": 218243}, {"Perpetrator_Race": "Unknown", "Freq": 196047}, {"Perpetrator_Race": "Black", "Freq": 214516}, {"Perpetrator_Race": "Asian/Pacific Islander", "Freq": 6046}]
