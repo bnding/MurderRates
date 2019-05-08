@@ -18,8 +18,8 @@ $(document).ready(function () {
     var x = d3.scaleBand()
         // .domain(["January", "February", "March", "April", "May", "June", "July", "August", "September", 
         //              "October", "November", "December"])
-        .rangeRound([0, width])
-        .padding(0.3);
+        .rangeRound([0, width-100])
+        .padding(0.6);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);

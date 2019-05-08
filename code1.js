@@ -18,8 +18,8 @@ $(document).ready(function () {
     var x = d3.scaleBand()
         // .domain(["January", "February", "March", "April", "May", "June", "July", "August", "September", 
         //              "October", "November", "December"])
-        .rangeRound([0, width])
-        .padding(0.3);
+        .rangeRound([0, width - 250])
+        .padding(0.7);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
@@ -70,8 +70,8 @@ $(document).ready(function () {
             .text("Frequency");
 
         svg.append("text")
-            .attr("x", (width / 1.8))             
-            .attr("y", margin.top / 2)
+            .attr("x", (width / 2.5))             
+            .attr("y", margin.top / 2.3)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style("text-decoration", "underline")  
