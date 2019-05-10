@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
 
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <script src="js/jquery.js" type="text/javascript"></script>
-
-     <script src="js/jquery.counterup.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/front.js"></script>
+     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+     <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+     <script src="js/front.js" type="text/javascript"></script>
      <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300|Stylish" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans:300|Roboto|Stylish" rel="stylesheet">
      <link rel="stylesheet" href="css/style.css">
 
 
@@ -17,108 +16,137 @@
 
 <body>
 
+
      <div>
           <title>Home</title>
-          <div class="container">
-               <title</title> <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
-          </div>
-          <div class="collapse navbar-collapse">
+          <div id = "navigator" class="container">
                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="page1.html">General</a></li>
-                    <li><a href="page2.html">Perpetrator</a></li>
-                    <li><a href="page3.html">Victim</a></li>
-                    <li><a href="page4.html">Weapon</a></li>
+                    <li class="nav-link"><a class="navbar-brand" href="#">Home</a></li>
+                    <li class="nav-link"><a class="navbar-brand" href="page1.html">General</a></li>
+                    <li class="nav-link"><a class="navbar-brand" href="page2.html">Perpetrator</a></li>
+                    <li class="nav-link"><a class="navbar-brand" href="page3.html">Victim</a></li>
+                    <li class="nav-link"><a class="navbar-brand" href="page4.html">Weapon</a></li>
                </ul>
           </div>
 
+          <section id="home" class="home-image">
+               <div class="overlay"></div>
+               <div class="col-md-12">
+                    <h1>Murder!</h1>
+                    <h4>Research of murder cases from 1980-2014</h4>
+               </div>
      </div>
-
-     <section id="home" class="home-image">
-          <div class="overlay"></div>
-          <div class="col-md-12">
-               <h1>Murder!</h1>
-               <h4>Research of murder cases from 1980-2014</h4>
-          </div>
-          </div>
      </section>
 
 
      <section id="about">
+
           <div class="container">
-               <h3>Fun Facts...</h3>
-               <div class="row">
-                    <div class="col">
-                         <p>12323</p>
+               
+               <div class="row nums">
+                    <h3 id = "inrow">About this data</h3>
+                    <div class="col-md-4">
+                         <p class="counter">638,455</p>
+                         <p>Rows of data processed.</p>
                     </div>
-                    <div class="col">
-                         <p>1236</p>
+                    <div class="col-md-4">
+                         <p class="counter">434</p>
+                         <p>Lines of python code.</p>
                     </div>
-                    <div class="col">
-                         <p>2934281</p>
+                    <div class="col-md-4">
+                         <p class="counter">4</p>
+                         <p>Collaborators</p>
                     </div>
                </div>
           </div>
 
-
           <div class="container">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Sed euismod nisi porta lorem mollis. Faucibus nisl tincidunt eget nullam non
-                    nisi. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Eget egestas purus
-                    viverra accumsan. Vel facilisis volutpat est velit egestas dui. Dui vivamus arcu felis bibendum ut
-                    tristique et egestas. Vel fringilla est ullamcorper eget nulla facilisi etiam. Sem nulla pharetra
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna aliqua. Sed euismod nisi porta lorem mollis. Faucibus nisl tincidunt eget nullam
+                    non
+                    nisi. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Eget egestas
+                    purus
+                    viverra accumsan. Vel facilisis volutpat est velit egestas dui. Dui vivamus arcu felis bibendum
+                    ut
+                    tristique et egestas. Vel fringilla est ullamcorper eget nulla facilisi etiam. Sem nulla
+                    pharetra
                     diam sit amet nisl suscipit adipiscing. Diam phasellus vestibulum lorem sed risus ultricies
-                    tristique. Viverra maecenas accumsan lacus vel facilisis. Ut tellus elementum sagittis vitae et leo.
+                    tristique. Viverra maecenas accumsan lacus vel facilisis. Ut tellus elementum sagittis vitae et
+                    leo.
                     Consectetur lorem donec massa sapien faucibus. Ridiculus mus mauris vitae ultricies leo integer
-                    malesuada nunc. Risus pretium quam vulputate dignissim suspendisse in est. Leo in vitae turpis massa
-                    sed elementum tempus. Sit amet venenatis urna cursus eget nunc scelerisque. Porttitor leo a diam
+                    malesuada nunc. Risus pretium quam vulputate dignissim suspendisse in est. Leo in vitae turpis
+                    massa
+                    sed elementum tempus. Sit amet venenatis urna cursus eget nunc scelerisque. Porttitor leo a
+                    diam
                     sollicitudin. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Egestas pretium
                     aenean pharetra magna ac placerat vestibulum lectus mauris.
 
-                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nisl pretium fusce id velit
-                    ut tortor pretium viverra suspendisse. Sit amet risus nullam eget felis eget nunc lobortis mattis.
-                    Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Donec ultrices tincidunt arcu
-                    non sodales neque. Vel pharetra vel turpis nunc. Pellentesque habitant morbi tristique senectus et
-                    netus et malesuada. Tempor orci dapibus ultrices in iaculis nunc sed. Eu scelerisque felis imperdiet
+                    Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nisl pretium fusce id
+                    velit
+                    ut tortor pretium viverra suspendisse. Sit amet risus nullam eget felis eget nunc lobortis
+                    mattis.
+                    Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Donec ultrices tincidunt
+                    arcu
+                    non sodales neque. Vel pharetra vel turpis nunc. Pellentesque habitant morbi tristique senectus
+                    et
+                    netus et malesuada. Tempor orci dapibus ultrices in iaculis nunc sed. Eu scelerisque felis
+                    imperdiet
                     proin fermentum leo vel. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Neque
                     sodales ut etiam sit amet. Leo duis ut diam quam. Diam vulputate ut pharetra sit amet. Vitae
-                    ultricies leo integer malesuada nunc vel risus. Id porta nibh venenatis cras sed felis eget. Vitae
-                    proin sagittis nisl rhoncus mattis rhoncus. Nisl condimentum id venenatis a condimentum vitae sapien
-                    pellentesque habitant. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Blandit
+                    ultricies leo integer malesuada nunc vel risus. Id porta nibh venenatis cras sed felis eget.
+                    Vitae
+                    proin sagittis nisl rhoncus mattis rhoncus. Nisl condimentum id venenatis a condimentum vitae
+                    sapien
+                    pellentesque habitant. Nulla pellentesque dignissim enim sit amet venenatis urna cursus.
+                    Blandit
                     massa enim nec dui nunc mattis. Neque sodales ut etiam sit amet.
 
-                    Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Orci ac auctor augue mauris
+                    Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Orci ac auctor augue
+                    mauris
                     augue. Tellus mauris a diam maecenas sed. Faucibus scelerisque eleifend donec pretium vulputate
-                    sapien nec sagittis aliquam. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Natoque
-                    penatibus et magnis dis parturient montes nascetur. Bibendum ut tristique et egestas quis. Massa sed
+                    sapien nec sagittis aliquam. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida.
+                    Natoque
+                    penatibus et magnis dis parturient montes nascetur. Bibendum ut tristique et egestas quis.
+                    Massa sed
                     elementum tempus egestas sed sed risus pretium. Ornare arcu dui vivamus arcu. Faucibus interdum
                     posuere lorem ipsum dolor sit amet consectetur adipiscing. In mollis nunc sed id semper risus.
 
-                    Facilisis gravida neque convallis a cras semper auctor neque. Molestie nunc non blandit massa enim.
-                    Dolor morbi non arcu risus quis varius quam. Porta non pulvinar neque laoreet suspendisse interdum
-                    consectetur libero. Odio euismod lacinia at quis risus sed. Nec ultrices dui sapien eget mi proin
-                    sed libero. A iaculis at erat pellentesque. Pharetra pharetra massa massa ultricies mi quis. Odio
-                    pellentesque diam volutpat commodo sed egestas egestas. Et odio pellentesque diam volutpat commodo.
-                    Mi eget mauris pharetra et ultrices neque ornare. Bibendum ut tristique et egestas quis ipsum. Eu
-                    scelerisque felis imperdiet proin fermentum leo vel orci porta. Et odio pellentesque diam volutpat
-                    commodo sed egestas egestas. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque.
+                    Facilisis gravida neque convallis a cras semper auctor neque. Molestie nunc non blandit massa
+                    enim.
+                    Dolor morbi non arcu risus quis varius quam. Porta non pulvinar neque laoreet suspendisse
+                    interdum
+                    consectetur libero. Odio euismod lacinia at quis risus sed. Nec ultrices dui sapien eget mi
+                    proin
+                    sed libero. A iaculis at erat pellentesque. Pharetra pharetra massa massa ultricies mi quis.
+                    Odio
+                    pellentesque diam volutpat commodo sed egestas egestas. Et odio pellentesque diam volutpat
+                    commodo.
+                    Mi eget mauris pharetra et ultrices neque ornare. Bibendum ut tristique et egestas quis ipsum.
+                    Eu
+                    scelerisque felis imperdiet proin fermentum leo vel orci porta. Et odio pellentesque diam
+                    volutpat
+                    commodo sed egestas egestas. Commodo sed egestas egestas fringilla phasellus faucibus
+                    scelerisque.
                     Velit euismod in pellentesque massa. In nibh mauris cursus mattis molestie a.
 
                     Et netus et malesuada fames. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.
-                    Tortor consequat id porta nibh. Nulla malesuada pellentesque elit eget gravida cum sociis natoque.
-                    Sed nisi lacus sed viverra tellus in. Vulputate eu scelerisque felis imperdiet proin. Suspendisse
-                    potenti nullam ac tortor vitae. Luctus venenatis lectus magna fringilla urna porttitor. Diam in arcu
-                    cursus euismod quis viverra nibh cras. At ultrices mi tempus imperdiet nulla. Sit amet risus nullam
-                    eget felis eget nunc lobortis mattis. Pulvinar etiam non quam lacus. Vulputate sapien nec sagittis
+                    Tortor consequat id porta nibh. Nulla malesuada pellentesque elit eget gravida cum sociis
+                    natoque.
+                    Sed nisi lacus sed viverra tellus in. Vulputate eu scelerisque felis imperdiet proin.
+                    Suspendisse
+                    potenti nullam ac tortor vitae. Luctus venenatis lectus magna fringilla urna porttitor. Diam in
+                    arcu
+                    cursus euismod quis viverra nibh cras. At ultrices mi tempus imperdiet nulla. Sit amet risus
+                    nullam
+                    eget felis eget nunc lobortis mattis. Pulvinar etiam non quam lacus. Vulputate sapien nec
+                    sagittis
                     aliquam malesuada bibendum arcu vitae elementum. Ut consequat semper viverra nam libero justo
                     laoreet sit. Eu augue ut lectus arcu bibendum at varius vel. Rutrum quisque non tellus orci ac
-                    auctor augue mauris. Magna sit amet purus gravida quis blandit turpis. Pellentesque habitant morbi
-                    tristique senectus et netus et malesuada. Bibendum neque egestas congue quisque egestas diam in.
+                    auctor augue mauris. Magna sit amet purus gravida quis blandit turpis. Pellentesque habitant
+                    morbi
+                    tristique senectus et netus et malesuada. Bibendum neque egestas congue quisque egestas diam
+                    in.
                     Phasellus vestibulum lorem sed risus ultricies tristique nulla.</p>
           </div>
      </section>
