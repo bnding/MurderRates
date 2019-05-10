@@ -30,7 +30,9 @@
 <script>src = "code3.js"</script>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="datasets/VictSex.js"></script>
 	<script type="text/javascript" src="datasets/VictRace.js"></script>
+	<script type="text/javascript" src="datasets/MurderVicAge.js"></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script type="text/javascript" src="js/code3.js"></script>
 
@@ -42,7 +44,7 @@
 </head>
 
 <body>
-	<title> Victim Trends Race</title>
+	<title> Victim Trends</title>
 	<div>
 			<div class="container">
 	   
@@ -64,20 +66,19 @@
 				 </div>
 	   
 		 </div>
-	<div id="bargraph">
-		<svg width="800" height="320" id="svg"> </svg>
-	</div>
 
 	</head>
 
 	<body>
-		<h3 id="title"></h3>
-
-		<div class="stuff">
-
-
+		<div id="bargraph">
+			<svg width="800" height="320" id="svg1"> </svg>
 		</div>
-
+		<div>
+			<svg width="800" height="320" id="svg2"></svg>
+		</div>
+		<div>
+			<svg width="800" height="320" id="svg3"></svg>
+		</div>
 
 	</body>
 
