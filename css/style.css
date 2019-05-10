@@ -1,28 +1,20 @@
-body {
-		background: #ffffff;
-    font-family: 'Lora', serif;
-    font-style: normal;
-}
-
-
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  font-weight: normal;
 }
 
 h1 {
-    font-size: 62px;
-    padding-bottom: 5px;
-    font-family: 'Stylish', sans-serif;
+  font-size: 62px;
+  padding-bottom: 5px;
+  font-family: 'Stylish', sans-serif;
 }
 
 h2 {
   font-size: 32px;
 }
 
-h2,h3 {
+h2, h3 {
   padding-bottom: 6px;
 }
 
@@ -38,12 +30,15 @@ h4 {
 }
 
 p {
-    color: #777;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 26px;
-    letter-spacing: 0.2px;
-    font-family: 'Montserrat', sans-serif;
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.counter {
+  font-size: 25px;
 }
 
 
@@ -51,53 +46,94 @@ p {
     General               
 -----------------------------------------*/
 
-html{
-  -webkit-font-smoothing: antialiased;
-}
 
 a {
-  color: #4d638c;
+  color: #DCE0D9;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #0a0a0a;
+  color: #A01B1B
+}
+
+/* .nav-link a:hover {
+  color: #0a0a0a;
+  cursor: pointer;
+  background-image: #0a0a0a
+} */
+
+
+#inrow {
+  padding-bottom: 50px;
+}
+
+#navigator {
+  width: 100%;
+  background-color: #0a0a0a;
 }
 
 #about {
-  background: #dce0d9;
+  background: #DCE0D9;
   padding-top: 60px;
   padding-bottom: 80px;
 }
 
-
 .overlay {
-  background:#353535;
+  background: #353535;
   width: 100%;
   height: 100vh;
   position: absolute;
 }
 
 
-
-
-
-
-/*---------------------------------------
-    Home section              
------------------------------------------*/
-
 #home {
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -webkit-flex;
-     display: -ms-flexbox;
-    display: flex;
-     align-items: center;
-    position: relative;
-    text-align: center;
+  
+  background-size: cover;
+  background-position: center center;
+  color: #DCE0D9;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7 );
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .home-image {
+  background: url("../images/johnwick.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
+
+.nums {
+  text-align: center;
+  font-family: 'Lato';
+}
+
+.counter{
+  font-family: 'Lato', sans-serif;
+  font-size: 45px;
+  font-weight: 1000;
+  text-align: center;
+  position: relative;
+}
+
+
 
 #home h4 {
   color: #dce0d9;
