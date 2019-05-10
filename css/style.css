@@ -42,11 +42,6 @@ p {
 }
 
 
-/*---------------------------------------
-    General               
------------------------------------------*/
-
-
 a {
   color: #DCE0D9;
   font-family: 'Open Sans', sans-serif;
@@ -58,13 +53,6 @@ a {
   background-color: #0a0a0a;
   color: #A01B1B
 }
-
-/* .nav-link a:hover {
-  color: #0a0a0a;
-  cursor: pointer;
-  background-image: #0a0a0a
-} */
-
 
 #inrow {
   padding-bottom: 50px;
@@ -81,9 +69,13 @@ a {
   padding-bottom: 80px;
 }
 
-#curr {
-  pointer-events: none;
+.overlay {
+  background: #353535;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
 }
+
 
 #home {
   
@@ -96,23 +88,25 @@ a {
   text-align: center;
 }
 
-#home h4 {
-  color: #dce0d9;
+#navigator h1 {
+  color: rgb(220, 224, 217);
+  font-family: "Open Sans";
+  font-weight: bolder;
+  font-size: 24pt;
+  line-height: 45px;
+  display: inline;
+  margin: 0px;
 }
 
-.overlay {
-  background: #353535;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
+.graph {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
-
-#curr {
-  color: #dce0d9;
-  border-bottom-color: #dce0d9;
+.graph p {
+  padding-top: 50px;
 }
-
 
 .overlay {
   background: rgba(0,0,0,0.7 );
@@ -149,3 +143,6 @@ a {
 
 
 
+#home h4 {
+  color: #dce0d9;
+}
