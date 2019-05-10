@@ -3,25 +3,26 @@
 
 
 <link rel="stylesheet" href="css/style.css">
+
 <head>
 
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/particles.min.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/jquery.parallax.js"></script>
-		<script src="js/custom.js"></script>
-		<script>src = "code.js"</script>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/custom.js"></script>
+	<script>src = "code.js"</script>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="datasets/CrimesMonth.js"></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
-	<script type="text/javascript" src="code.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
 
 	<script>
 
@@ -29,32 +30,40 @@
 	</script>
 
 </head>
+
 <body>
-	<title>Murder Trends</title>
+	<title>General Trends</title>
 	<div>
-			<div class="container">
-	   
-				 <div class="navbar-header">
-					  <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						   <span class="icon icon-bar"></span>
-						   <span class="icon icon-bar"></span>
-						   <span class="icon icon-bar"></span>
-					  </button>
-				 </div>
-				 <div class="collapse navbar-collapse">
-					  <ul class="nav navbar-nav navbar-right">
-						   <li class="active"><a href="index.html">Home</a></li>
-						   <li><a href="page1.html">page1</a></li>
-						   <li><a href="page2.html">page2</a></li>
-						   <li><a href="page3.html">page3</a></li>
-						   <li><a href="page4.html">page4</a></li>
-						   <li><a href="page5.html">page5</a></li>
-					  </ul>
-				 </div>
-	   
-		 </div>
-	<div id="bargraph">
-		<svg width="800" height="320"></svg>
+		<div class="container">
+
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="page1.html">General</a></li>
+					<li><a href="page2.html">Perpetrator</a></li>
+					<li><a href="page3.html">Victim</a></li>
+					<li><a href="page4.html">Weapon</a></li>
+					<li><a href="page5.html">page5</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		
+		<div class="bargraph">
+			<svg width="800" height="320" id="svg1"></svg>
+		</div>
+		<div>
+			<svg width="800" height="320" id="svg2"></svg>
+		</div>
+		<svg width="800" height="320" id="svg3"></svg>
 	</div>
 
 	</head>
