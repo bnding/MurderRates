@@ -29,7 +29,7 @@ def murderRateState():
 	file.write(json.dumps(output_dicts))
 	file.close()
 
-################################
+################################	
 
 def murderRateDecState():
 	xl = pd.ExcelFile('Murders.xlsx')
@@ -132,7 +132,7 @@ def murderPerpAge():
 	xl = pd.ExcelFile('Murders.xlsx')
 	df = xl.parse('Sheet1')
 	age = df['Perpetrator Age']
-	# freq = dict()
+	freq = dict()
 
 	# for key in age:
 	# 	if key in freq:
@@ -147,11 +147,11 @@ def murderPerpAge():
 	# file.write(json.dumps(freq))
 	# file.close()
 
-	freq1 = collections.Counter(df['Perpetrator Age'])
-	freq = [{'Perpetrator_Age': m, 'Freq': f} for m, f in freq1.items()]
-	file = open("MurderPerpAge.js", "w+")
-	file.write(json.dumps(freq))
-	file.close()
+	# freq1 = collections.Counter(df['Perpetrator Age'])
+	# freq = [{'Perpetrator_Age': m, 'Freq': f} for m, f in freq1.items()]
+	# file = open("MurderPerpAge.js", "w+")
+	# file.write(json.dumps(freq))
+	# file.close()
 
 ################################
 
@@ -528,7 +528,7 @@ def crimesMonth():
 # murderRateDecState()
 #weaponRelationship()
 #raceWeapon()
-#murderPerpAge()
+murderPerpAge()
 # murderRatePerpAgeDec()
 # murderPerpAgeState()
 #murderVicAge()

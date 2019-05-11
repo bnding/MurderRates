@@ -74,8 +74,7 @@ $(document).ready(function () {
             .attr("y", margin.top / 2.3)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Crimes Committed by Perpetrator's Sex");
 
         g.selectAll(".bar")
@@ -169,8 +168,7 @@ $(document).ready(function () {
             .attr("y", margin.top / 2)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Crimes Committed Based on Perpetrator's Race");
 
         g.selectAll(".bar")
@@ -262,9 +260,8 @@ $(document).ready(function () {
             .attr("x", (width / 1.8))             
             .attr("y", margin.top / 2)
             .attr("text-anchor", "middle")  
-            .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style("font-size", "16px")  
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Murders Committed per Perpetrator's Age");
 
         g.selectAll(".bar")

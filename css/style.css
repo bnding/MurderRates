@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -26,7 +26,7 @@ h4 {
   color: #666;
   font-size: 22px;
   font-weight: normal;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -37,14 +37,37 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+div .graph {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div svg {
+  padding-left: 25px;
+}
+
+div p { 
+  padding-left: 35px;
+  padding-top: 100px;
+  padding-right: 60px;
+}
+
+
 .counter {
   font-size: 25px;
+}
+
+rect {
+  color: black;
 }
 
 
 a {
   color: #DCE0D9;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   font-size: 12px;
 }
@@ -90,7 +113,7 @@ a {
 
 #navigator h1 {
   color: rgb(220, 224, 217);
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-weight: bolder;
   font-size: 24pt;
   line-height: 45px;
@@ -104,9 +127,9 @@ a {
   justify-content: space-around;
 }
 
-.graph p {
+/* .graph p {
   padding-top: 50px;
-}
+} */
 
 .overlay {
   background: rgba(0,0,0,0.7 );

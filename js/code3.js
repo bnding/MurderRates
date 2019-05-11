@@ -73,9 +73,8 @@ $(document).ready(function () {
             .attr("x", (width / 2.5))             
             .attr("y", margin.top / 2.3)
             .attr("text-anchor", "middle")  
-            .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style("font-size", "16px")  
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Number of Victims by Sex");
 
         g.selectAll(".bar")
@@ -169,8 +168,7 @@ $(document).ready(function () {
             .attr("y", margin.top / 2)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Number of Victims by Race");
 
         g.selectAll(".bar")
@@ -206,8 +204,8 @@ $(document).ready(function () {
     //var barWidth = width/24;
 
     var x = d3.scaleBand()
-        .rangeRound([0, width+800])
-        .padding(0.2);
+        .rangeRound([0, width-9])
+        .padding(0.5);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
@@ -258,12 +256,11 @@ $(document).ready(function () {
             .text("Frequency");
 
         svg.append("text")
-            .attr("x", (width / 1.8))             
+            .attr("x", (width / 1.9))             
             .attr("y", margin.top / 2)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Number of Victims by Age");
 
         g.selectAll(".bar")
@@ -271,7 +268,7 @@ $(document).ready(function () {
             .enter().append("rect")
             .attr("class", "bar")
             .attr("x", function (d) { return x(d.Victim_Age); })
-            .attr("width", 10)
+            .attr("width", x.bandwidth())
             .attr("y", function (d) { return y(d.Freq); })
             .attr("height", function (d) { return height - y(d.Freq); })
             .attr("fill", "#69b3a2");

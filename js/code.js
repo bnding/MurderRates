@@ -77,7 +77,7 @@ $(document).ready(function () {
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style("text-decoration", "underline")  
-            .style('font-family', '"Open Sans", sans-serif')
+            .style('font-family', '"Montserrat", sans-serif')
             .text("Crimes Committed per Month");
 
         g.selectAll(".bar")

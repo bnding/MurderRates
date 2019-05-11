@@ -1,33 +1,18 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-	  
-  
-	  <style>
-		  #bargraph {
-			  
-		  }
-	  
-	  </style>
+
 
 
 <head>
 
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans:300|Roboto|Stylish" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/jquery.parallax.js"></script>
-	<script src="js/custom.js"></script>
 	<script>src = "code1.js"</script>
-	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="datasets/PerpSex.js"></script>
 	<script type="text/javascript" src="datasets/PerpRace.js"></script>
 	<script type="text/javascript" src="datasets/MurderPerpAge.js"></script>
@@ -35,7 +20,7 @@
 	<script type="text/javascript" src="datasets/MurderRatePerpAgeDec.js"></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script type="text/javascript" src="js/code1.js"></script>
-	<link rel="stylesheet" href="css/style.css">
+	
 
 	<script>
 
@@ -51,7 +36,7 @@
 			<h1>Perpetrator Trends</h1>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-link"><a class="navbar-brand" href="index.html">Home</a></li>
-				<li class="nav-link"><a id="curr" class="navbar-brand" href="page1.html">General</a></li>
+				<li class="nav-link"><a class="navbar-brand" href="page1.html">General</a></li>
 				<li class="nav-link"><a class="navbar-brand" href="page2.html">Perpetrator</a></li>
 				<li class="nav-link"><a class="navbar-brand" href="page3.html">Victim</a></li>
 				<li class="nav-link"><a class="navbar-brand" href="page4.html">Weapon</a></li>
@@ -62,52 +47,59 @@
 
 	</head>
 
-	<body>
+	<div class="graph">
+		<div>
+			<svg width="800" height="400" id="svg1"></svg>
+		</div>
+		<div>
+			<p>This bar graph depicts the numbers of crimes committed in the United States per month.
+				In general, the frequency of murders for all the twelve months seems to be approximately the same.
+				However, according to this representation, July is the month with the highest crimes committed
+				followed closely by August.
+				It can also be implied that murders are more likely to be committed during the Summer than any other
+				season.</p>
+		</div>
+	</div>
 
-		<div class="graph">
-			<div>
-				<svg width="800" height="400" id="svg1"></svg>
-			</div>
-			<div>
-				<p>This bar graph depicts the numbers of crimes committed in the United States per month.  
-				In general, the frequency of murders for all the twelve months seems to be approximately the same. 
-				However, according to this representation, July is the month with the highest crimes committed followed closely by August.  
-				 It can also be implied that murders are more likely to be committed during the Summer than any other season.
-				</p>
-			</div>
+
+
+	<div class="graph">
+		<div>
+			<svg width="800" height="400" id="svg2"></svg>
 		</div>
-		<div class="graph">
-			<div>
-				<svg width="800" height="400" id="svg2"></svg>
-			</div>
-			<div>
-				<p>This bar graph represents the amount of murders committed based on the perpetrator's race. 
-				The races we have included based on the data set are Native American/Alaskan, White, Black, unknown, and Asian/Pacific Islander. 
-				The race with the top number of crimes is white and following closely behind is the black race and unknown. 
-				These two races reach approximately 200,000 crimes. Surprisingly, all the other races are very low (almost less than 2,000) 
-				compared to these two.</p> 
-			</div>
+		<div>
+			<p>This bar graph represents the amount of murders committed based on the perpetrator's race.
+				The races we have included based on the data set are Native American/Alaskan, White, Black, unknown,
+				and Asian/Pacific Islander.
+				The race with the top number of crimes is white and following closely behind is the black race and
+				unknown.
+				These two races reach approximately 200,000 crimes. Surprisingly, all the other races are very low
+				(almost less than 2,000)
+				compared to these two.</p>
 		</div>
+	</div>
+	</div>
+	<div class="graph">
+		<div>
+			<svg width="800" height="400" id="svg3"></svg>
 		</div>
-		<div class="graph">
-			<div>
-				<svg width="800" height="400" id="svg3"></svg>
-			</div>
-			<div>
-				<p>This bar graph depicts the frequency of crimes committed by perpetrators based on their ages. 
-				It shows how crimes were committed more during the early twenties and then gradually started decreasing. 
-				The maximum number of crimes is committed by perpetrators of age 20. This graph also depicts a bell curve 
+		<div>
+			<p>This bar graph depicts the frequency of crimes committed by perpetrators based on their ages.
+				It shows how crimes were committed more during the early twenties and then gradually started
+				decreasing.
+				The maximum number of crimes is committed by perpetrators of age 20. This graph also depicts a bell
+				curve
 				where it peaks at age 20 and gradually decreases as the age increases.</p>
-			</div>
 		</div>
-			<div>
-				<svg width="800" height="320" id="svg4"></svg>
-			</div>
-			<div>
-				<svg width="800" height="320" id="svg3"></svg>
-			</div>
-		</div>
+	</div>
+	<div>
+		<svg width="800" height="320" id="svg4"></svg>
+	</div>
+	<div>
+		<svg width="800" height="320" id="svg3"></svg>
+	</div>
+	</div>
 
-	</body>
+</body>
 
 </html>
