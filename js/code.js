@@ -24,6 +24,23 @@ $(document).ready(function () {
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
 
+    // var tooltip = d3.select("body")
+    //     .append("div")
+    //     .style("position", "absolute")
+    //     .style("z-index", "10")
+    //     .style("visibility", "hidden")
+    //     .style("background", "#000")
+    //     .text("a simple tooltip");
+
+    // d3.select("body")
+    //     .selectAll("div")
+    //     .data(data)
+    //     .enter().append("div")
+    //     .style("width", function(d) { return x(d) + "px"; })
+    //     .text(function(d) { return d; })
+    //     .on("mouseover", function(d){tooltip.text(d); return tooltip.style("visibility", "visible");})
+    //     .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+    //     .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
     /*
     * Bar Graph Drawer 
     * Function can be made modular by renaming data to [{"x":"xData", "y":"yData"}]

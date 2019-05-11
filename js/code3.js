@@ -207,7 +207,7 @@ $(document).ready(function () {
 
     var x = d3.scaleBand()
         .rangeRound([0, width+800])
-        .padding(0.6);
+        .padding(0.2);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
@@ -227,7 +227,7 @@ $(document).ready(function () {
         })]);
 
         g.append("g")
-            .attr("transform", "translate(0," + height + ")")
+            .attr("transform", "translate(0," + (height) + ")")
             .call(d3.axisBottom(x));
 
         // text label for the x axis
@@ -271,7 +271,7 @@ $(document).ready(function () {
             .enter().append("rect")
             .attr("class", "bar")
             .attr("x", function (d) { return x(d.Victim_Age); })
-            .attr("width", x.bandwidth())
+            .attr("width", 10)
             .attr("y", function (d) { return y(d.Freq); })
             .attr("height", function (d) { return height - y(d.Freq); })
             .attr("fill", "#69b3a2");
