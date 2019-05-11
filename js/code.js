@@ -42,23 +42,8 @@ $(document).ready(function () {
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
 
-        // text label for the x axis
-        // svg.append("text")             
-        //     .attr("transform",
-        //         "translate(" + (width/2 + 15) + " ," + 
-        //                     (height + margin.top + 36) + ")")
-        //     .attr("text-anchor", "top")
-        //     .text("Month");
-
         g.append("g")
             .call(d3.axisLeft(y));
-            // .append("text")
-            // .attr("fill", "#000")
-            // .attr("transform", "rotate(-90)")
-            // .attr("y", 6)
-            // .attr("dy", "0.71em")
-            // .attr("text-anchor", "end")
-            // .text("Frequency");
 
         // text label for the y axis
         svg.append("text")

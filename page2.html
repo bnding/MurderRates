@@ -11,7 +11,6 @@
 	  
 	  </style>
 
-<link rel="stylesheet" href="css/style.css">
 
 <head>
 
@@ -36,6 +35,7 @@
 	<script type="text/javascript" src="datasets/MurderRatePerpAgeDec.js"></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script type="text/javascript" src="js/code1.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 
 	<script>
 
@@ -65,19 +65,41 @@
 	<body>
 
 		<div class="bargraph">
-			<svg width="800" height="320" id="svg1"></svg>
-		</div>
-		<div>
-			<svg width="800" height="320" id="svg2"></svg>
-		</div>
-		<div>
-			<svg width="800" height="320" id="svg3"></svg>
-		</div>
-		<div>
-			<svg width="800" height="320" id="svg4"></svg>
-		</div>
-		<div>
-			<svg width="800" height="320" id="svg3"></svg>
+			<div>
+				<svg width="800" height="400" id="svg1"></svg>
+			</div>
+			<div>
+				<p>This bar graph depicts the numbers of crimes committed in the United States per month.  
+				In general, the frequency of murders for all the twelve months seems to be approximately the same. 
+				However, according to this representation, July is the month with the highest crimes committed followed closely by August.  
+				 It can also be implied that murders are more likely to be committed during the Summer than any other season.
+				</p>
+			</div>
+			<div>
+				<svg width="800" height="400" id="svg2"></svg>
+			</div>
+			<div>
+				<p>This bar graph represents the amount of murders committed based on the perpetrator's race. 
+				The races we have included based on the data set are Native American/Alaskan, White, Black, unknown, and Asian/Pacific Islander. 
+				The race with the top number of crimes is white and following closely behind is the black race and unknown. 
+				These two races reach approximately 200,000 crimes. Surprisingly, all the other races are very low (almost less than 2,000) 
+				compared to these two.</p> 
+			</div>
+			<div>
+				<svg width="800" height="400" id="svg3"></svg>
+			</div>
+			<div>
+				<p>This bar graph depicts the frequency of crimes committed by perpetrators based on their ages. 
+				It shows how crimes were committed more during the early twenties and then gradually started decreasing. 
+				The maximum number of crimes is committed by perpetrators of age 20. This graph also depicts a bell curve 
+				where it peaks at age 20 and gradually decreases as the age increases.</p>
+			</div>
+			<div>
+				<svg width="800" height="320" id="svg4"></svg>
+			</div>
+			<div>
+				<svg width="800" height="320" id="svg3"></svg>
+			</div>
 		</div>
 
 	</body>
