@@ -1,36 +1,29 @@
 h1, h2, h3, h4, h5, h6 {
+  color: #565554;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
+
+
 h1 {
-  font-size: 62px;
+  color: #DCE0D9;
+  font-size: 100px;
   padding-bottom: 5px;
   font-family: 'Stylish', sans-serif;
 }
 
-h2 {
-  font-size: 32px;
-}
-
-h2, h3 {
-  padding-bottom: 6px;
-}
-
 h3 {
-  font-size: 26px;
+  font-size: 35px;
 }
 
 h4 {
-  color: #666;
-  font-size: 22px;
-  font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
 }
 
 p {
-  color: #777;
+  color: #565554;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -38,7 +31,7 @@ p {
 }
 
 div .graph {
-  color: #777;
+  color: #565554;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -49,19 +42,19 @@ div svg {
   padding-left: 25px;
 }
 
-div p { 
-  padding-left: 35px;
-  padding-top: 100px;
+.graph p { 
+  padding-left: 25px;
   padding-right: 60px;
+  padding-top: 100px;
 }
 
 
 .bar {
-  fill: black;
+  fill:#565554;
 }
 
 .bar:hover {
-  fill: red;
+  fill: #A01B1B;
 }
 
 .d3-tip {
@@ -69,27 +62,10 @@ div p {
   font-weight: bold;
   padding: 12px;
   background: rgba(0,0,,0,0.8);
-  color: blue;
+  color: #565554;
   border-radius: 2px;
 }
 
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  text-align: center;
-}
-
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
 
 
 .counter {
@@ -128,11 +104,12 @@ a {
   padding-bottom: 80px;
 }
 
+body {
+  background: #DCE0D9;
+}
+
 .overlay {
-  background: #353535;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
+  opacity: 0.75;
 }
 
 
@@ -162,10 +139,6 @@ a {
   display: flex;
   justify-content: space-around;
 }
-
-/* .graph p {
-  padding-top: 50px;
-} */
 
 .overlay {
   background: rgba(0,0,0,0.7 );
