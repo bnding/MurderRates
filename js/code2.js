@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // $("#title").append(JSON.stringify(data))
+    tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.Freq; });
 
     var svg = d3.select("svg"),
         margin = {
@@ -11,24 +11,16 @@ $(document).ready(function () {
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
-    //bandwidth() seems to do the same thing here
-    //var barWidth = width/24;
+
+        svg.call(tip);
 
     var x = d3.scaleBand()
-        // .domain(["January", "February", "March", "April", "May", "June", "July", "August", "September", 
-        //              "October", "November", "December"])
         .rangeRound([0, width-100])
         .padding(0.6);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
 
-    /*
-    * Bar Graph Drawer 
-    * Function can be made modular by renaming data to [{"x":"xData", "y":"yData"}]
-    * This will change it so we don't need to use d.Month but d.x instead
-    */
     function draw(data) {
         x.domain(data.map(function (d) {
             return d.Perpetrator_Race;
@@ -42,23 +34,8 @@ $(document).ready(function () {
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
 
-        // text label for the x axis
-        // svg.append("text")             
-        //     .attr("transform",
-        //         "translate(" + (width/2 + 15) + " ," + 
-        //                     (height + margin.top + 36) + ")")
-        //     .attr("text-anchor", "top")
-        //     .text("Month");
-
         g.append("g")
             .call(d3.axisLeft(y));
-            // .append("text")
-            // .attr("fill", "#000")
-            // .attr("transform", "rotate(-90)")
-            // .attr("y", 6)
-            // .attr("dy", "0.71em")
-            // .attr("text-anchor", "end")
-            // .text("Frequency");
 
         // text label for the y axis
         svg.append("text")
@@ -86,6 +63,8 @@ $(document).ready(function () {
             .attr("width", x.bandwidth())
             .attr("y", function (d) { return y(d.Freq); })
             .attr("height", function (d) { return height - y(d.Freq); })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
             .attr("fill", "#69b3a2");
     }
 
