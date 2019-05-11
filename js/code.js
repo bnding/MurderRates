@@ -50,13 +50,8 @@ $(document).ready(function () {
         svg.append("text")
             .attr("x", (width / 1.8))
             .attr("y", margin.top / 4.2)
-<<<<<<< HEAD
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
-=======
-            .attr("text-anchor", "middle")
-            .style("font-size", "16px")
->>>>>>> 204306e03244772c769886cf44c2223b57a5ab12
             .style('font-family', '"Montserrat", sans-serif')
             .text("Crimes Committed per Month");
 
