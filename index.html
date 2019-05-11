@@ -37,9 +37,7 @@
 
 
      <section id="about">
-
           <div class="container">
-
                <div class="row nums">
                     <h3 id="inrow">About this website</h3>
                     <div class="col-md-4">
@@ -55,37 +53,103 @@
                          <p>Collaborators.</p>
                     </div>
                </div>
-          </div>
-
-          <div class="container">
-               <p> There was an idea...</p>
-
-               <p>After watching a documentary of Ted Bundy on Netflix, we were intrigued by how a single man can commit over 30 murders within 4 years.  Ted Bundy, who was a White male serial killer in the 1980s, brutally murdered and sexually assaulted White women.  As a result, our venture was to research murder trends particularly from the 1980s till present time which includes Ted Bundy's data.</p>
-
-               <p>We knew we needed data that was large enough to analyze trends. Consequently we went to the boss of data websites called Kaggle.  In Kaggle, we searched up a data file that had enough columns and data rows to analyze the trends.  This particular file that we found had over 630,000 rows and 20 columns!  Since we had many columns in our data, coming up with trends was not that hard.</p>
-
-               <p>We knew we wanted to work with Python and we had past experience in HTML therefore we finalized our idea to create a website.  However...</p>
-
-               <p>Little did we know that Python takes quite some time to scrape large pieces of data...sigh... Each trend that we ran took about four minutes each.  We have a total of 18 trends.  This means 72 minutes to get all our json files.  Due to the number of problems we had with the formatting of our output, we ran our datasets about 8-9 times each.  This means 576-648 minutes total to simply output the correct formatting of the json files so that we can properly create our graphs in javascript.  D3.js is very helpful in creating graphs however is very particular with the format of the data.</p>
-
-               <p>Another difficulty we faced was to create our first graph.  We took a simple trend such as the number of crimes committed per month and attempted to graph it.  There were some issues with the spacing of the bars on the graph as well as the ordering of the months on the x-axis.  We then realized that we could just order the months in python.  This is one of the reasons why we had to keep running our data over and over again which added up to over 9 hours of data processing.</p>
-
-               <p>After figuring out how to create one graph, the other graphs which involved only one column became pretty straightforward.  As a result, our next task was to divide up the trends into their corresponding pages on the website.  However, we ran into our next issue.
-               For the trends that dealt with the same topic for example perpetrator, we were unsure about how to display the graph beneath one another.  After further research, we found out that we needed to separate each graph function in its corresponding javascript file.  We were finally able to add graphs under each other.</p>
-
-               <p>But the story isn't over yet...</p>
-
-               <p>When we graphed some trends that dealt with the "Age" column in our dataset, we ran into major issues.  First, in the Perpetrator Age column, there were rows with “Blanks” and ages that started from 0.  Weird right?  So then we channeled our inner Business Student skills and filtered the data using “Filter” built into Excel.  Then we had to run our data again (which kept adding to the amount of time we we spent on data processing) and realized it did nothing.  But wait, it keeps getting worse.  We were not even able to sort on the data because for some reason, the ages appeared to be in strings rather than integers.  But after consulting with outside sources, we were able to convert the strings into integers and all became well in the world.  We were finally able to sort the data and plot the graph properly.  However, we ran into another wall.  Some of the data was cut-off towards the right.  We tried to expand the x-axis but that just resulted in expanding the page and making the entire page look janky.  Consequently, we had to scrape the data and get rid of ages that did not really make sense.  I mean a perpetrator at the age of 0, come on...</p>
-
-               <p>The penultimate challenge we faced was to create graphs that involved states.  We thought it would be fun and also cool to visualize this kind of data using a map.  The map physically represents the state and the depth of the color shows the frequency.  Pretty cool right?</p>
-
-               <p>Our last and certainly the least fun challenge was to create a graph that involves more than one column.  We had an idea to create nodes that point to blocks of data.  Since conventional bar and line graphs are quite difficult to implement when dealing with different variables, we figured nodes are the best way to go.  As a result, we made a node.js file which handles all graphs dealing with 2 or more columns (not involving states of course).</p>
-
-               <p>Finally, styling.</p>
-
-               <p>Styling took many exhausting hours to complete (but does not even come close to the struggle with processing the data).  We cannot even fathom having a website that is simply white.  That is boring and dull.  So we knew we needed the help of John Wick, a cold-blooded assassin, to be front and center.  For the rest of the site, we found some templates (referenced below) that helped bring some special effects and creative styling.  We did run into problems with formatting the texts next to the graphs, but eventually figured it out.</p>
-
-               <p>All in all, we hope you find the trends interesting and noteworthy!  Our blood, sweat, and tears went into this project :)</p>
+               <p> There was an idea...
+                    <br>
+                    After watching a documentary of Ted Bundy on Netflix, we were intrigued by how a single man can
+                    commit over 30 murders within 4 years. Ted Bundy, who was a White male serial killer in the 1980s,
+                    brutally murdered and sexually assaulted White women. As a result, our venture was to research
+                    murder trends particularly from the 1980s till present time which includes Ted Bundy's data.
+                    <br>
+                    We knew we needed data that was large enough to analyze trends. Consequently we went to the boss of
+                    data websites called Kaggle. In Kaggle, we searched up a data file that had enough columns and data
+                    rows to analyze the trends. This particular file that we found had over 630,000 rows and 20 columns!
+                    Since we had many columns in our data, coming up with trends was not that hard.
+                    <br>
+                    We knew we wanted to work with Python and we had past experience in HTML therefore we finalized our
+                    idea to create a website. However...
+                    <br>
+                    Little did we know that Python takes quite some time to scrape large pieces of data...sigh... Each
+                    trend that we ran took about four minutes each. We have a total of 18 trends. This means 72 minutes
+                    to get all our json files. Due to the number of problems we had with the formatting of our output,
+                    we ran our datasets about 8-9 times each. This means 576-648 minutes total to simply output the
+                    correct formatting of the json files so that we can properly create our graphs in javascript. D3.js
+                    is very helpful in creating graphs however is very particular with the format of the data.
+                    <br>
+                    Another difficulty we faced was to create our first graph. We took a simple trend such as the number
+                    of crimes committed per month and attempted to graph it. There were some issues with the spacing of
+                    the bars on the graph as well as the ordering of the months on the x-axis. We then realized that we
+                    could just order the months in python. This is one of the reasons why we had to keep running our
+                    data over and over again which added up to over 9 hours of data processing.
+                    <br>
+                    After figuring out how to create one graph, the other graphs which involved only one column became
+                    pretty
+                    straightforward. As a result, our next task was to divide up the trends into their corresponding
+                    pages on
+                    the website. However, we ran into our next issue.
+                    For the trends that dealt with the same topic for example perpetrator, we were unsure about how to
+                    display the graph beneath one another. After further research, we found out that we needed to
+                    separate
+                    each graph function in its corresponding javascript file. We were finally able to add graphs under
+                    each
+                    other.
+                    <br>
+                    But the story isn't over yet...
+                    <br>
+                    When we graphed some trends that dealt with the "Age" column in our dataset, we ran into major
+                    issues.
+                    First, in the Perpetrator Age column, there were rows with “Blanks” and ages that started from 0.
+                    Weird
+                    right? So then we channeled our inner Business Student skills and filtered the data using “Filter”
+                    built
+                    into Excel. Then we had to run our data again (which kept adding to the amount of time we we spent
+                    on
+                    data processing) and realized it did nothing. But wait, it keeps getting worse. We were not even
+                    able to
+                    sort on the data because for some reason, the ages appeared to be in strings rather than integers.
+                    But
+                    after consulting with outside sources, we were able to convert the strings into integers and all
+                    became
+                    well in the world. We were finally able to sort the data and plot the graph properly. However, we
+                    ran
+                    into another wall. Some of the data was cut-off towards the right. We tried to expand the x-axis but
+                    that
+                    just resulted in expanding the page and making the entire page look janky. Consequently, we had to
+                    scrape
+                    the data and get rid of ages that did not really make sense. I mean a perpetrator at the age of 0,
+                    come
+                    on...
+                    <br>
+                    The penultimate challenge we faced was to create graphs that involved states. We thought it would be
+                    fun
+                    and also cool to visualize this kind of data using a map. The map physically represents the state
+                    and the
+                    depth of the color shows the frequency. Pretty cool right?
+                    <br>
+                    Our last and certainly the least fun challenge was to create a graph that involves more than one
+                    column.
+                    We had an idea to create nodes that point to blocks of data. Since conventional bar and line graphs
+                    are
+                    quite difficult to implement when dealing with different variables, we figured nodes are the best
+                    way to
+                    go. As a result, we made a node.js file which handles all graphs dealing with 2 or more columns (not
+                    involving states of course).
+                    <br>
+                    Finally, styling.
+                    <br>
+                    Styling took many exhausting hours to complete (but does not even come close to the struggle with
+                    processing the data). We cannot even fathom having a website that is simply white. That is boring
+                    and
+                    dull. So we knew we needed the help of John Wick, a cold-blooded assassin, to be front and center.
+                    For
+                    the rest of the site, we found some templates (referenced below) that helped bring some special
+                    effects
+                    and creative styling. We did run into problems with formatting the texts next to the graphs, but
+                    eventually figured it out.
+                    <br>
+                    All in all, we hope you find the trends interesting and noteworthy! Our blood, sweat, and tears went
+                    into
+                    this project :)
+               </p>
           </div>
      </section>
 
