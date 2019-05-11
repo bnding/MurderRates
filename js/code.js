@@ -75,8 +75,7 @@ $(document).ready(function () {
             .attr("x", (width / 1.8))             
             .attr("y", margin.top / 4.2)
             .attr("text-anchor", "middle")  
-            .style("font-size", "16px") 
-            .style("text-decoration", "underline")  
+            .style("font-size", "16px")   
             .style('font-family', '"Montserrat", sans-serif')
             .text("Crimes Committed per Month");
 
