@@ -51,7 +51,7 @@ $(document).ready(function () {
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style('font-family', '"Montserrat", sans-serif')
-            .text("Crimes Committed by Perpetrator's Sex");
+            .text("Crimes Committed Based on Perpetrator's Sex");
 
         g.selectAll(".bar")
             .data(data)
@@ -201,7 +201,7 @@ $(document).ready(function () {
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style('font-family', '"Montserrat", sans-serif')
-            .text("Crimes Committed by Perpetrators by Age");
+            .text("Crimes Committed Based on Perpetrator's Age");
 
         g.selectAll(".bar")
             .data(data)
