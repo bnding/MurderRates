@@ -172,7 +172,7 @@ body {
   color: #dce0d9;
 }
 
-line {
+.line {
     fill: none;
     stroke: #3A3335;
     stroke-width: 3;
