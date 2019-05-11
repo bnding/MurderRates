@@ -15,7 +15,7 @@ $(document).ready(function () {
         svg.call(tip);
 
     var x = d3.scaleBand()
-        .rangeRound([0, width-100])
+        .rangeRound([0, width-10])
         .padding(0.6);
 
     var y = d3.scaleLinear()

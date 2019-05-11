@@ -164,8 +164,8 @@ $(document).ready(function () {
         svg.call(tip);
 
     var x = d3.scaleBand()
-        .rangeRound([0, width+45])
-        .padding(0.5);
+        .rangeRound([0, width-70])
+        .padding(0.25);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
