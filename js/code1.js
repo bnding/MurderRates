@@ -201,7 +201,7 @@ $(document).ready(function () {
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style('font-family', '"Montserrat", sans-serif')
-            .text("Number of Victims by Age");
+            .text("Crimes Committed by Perpetrators by Age");
 
         g.selectAll(".bar")
             .data(data)
