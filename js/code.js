@@ -1,5 +1,6 @@
 $(document).ready(function () {
     // $("#title").append(JSON.stringify(data))
+    tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.Freq; });
 
     var svg = d3.select("#svg1"),
         margin = {
@@ -12,17 +13,15 @@ $(document).ready(function () {
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
+    svg.call(tip);
+
     var line = d3.line()
         .x(function(d) { return x(d.Month) + 15;})
         .y(function(d) { return y(d.Freq);})
         //.curve(d3.curveMonotoneX);
 
-    //bandwidth() seems to do the same thing here
-    //var barWidth = width/24
-
     var x = d3.scaleBand()
-        // .domain(["January", "February", "March", "April", "May", "June", "July", "August", "September", 
-        //              "October", "November", "December"])
+
         .rangeRound([0, width])
         .padding(0.5);
 
@@ -91,7 +90,9 @@ $(document).ready(function () {
             .attr("cx", function (d) { return x(d.Month) + 15; })
             .attr("cy", function (d) { return y(d.Freq); })
             .attr("r", 5)
-            .attr("fill", "#F0544F");
+            .on("mouseover", tip.show)
+            .on("mouseout", tip.hide)
+            .attr("fill", "#A01B1B");
     }
 
     draw(crimesMonth);
