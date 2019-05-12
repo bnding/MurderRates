@@ -19,7 +19,7 @@ $(document).ready(function () {
         .padding(0.7);
 
     var y = d3.scaleLinear()
-        .rangeRound([height-8, 0]);
+        .rangeRound([height, 0]);
 
     function draw(data) {
         x.domain(data.map(function (d) {
@@ -162,8 +162,8 @@ $(document).ready(function () {
         svg.call(tip);
 
     var x = d3.scaleBand()
-        .rangeRound([0, width-9])
-        .padding(0.5);
+        .rangeRound([0, width-10])
+        .padding(0.25);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);

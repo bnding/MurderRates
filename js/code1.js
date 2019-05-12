@@ -51,7 +51,7 @@ $(document).ready(function () {
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style('font-family', '"Montserrat", sans-serif')
-            .text("Crimes Committed by Perpetrator's Sex");
+            .text("Crimes Committed Based on Perpetrator's Sex");
 
         g.selectAll(".bar")
             .data(data)
@@ -160,11 +160,12 @@ $(document).ready(function () {
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+        
         svg.call(tip);
+
     var x = d3.scaleBand()
-        .rangeRound([0, width+800])
-        .padding(0.6);
+        .rangeRound([0, width-70])
+        .padding(0.25);
 
     var y = d3.scaleLinear()
         .rangeRound([height, 0]);
@@ -179,7 +180,7 @@ $(document).ready(function () {
         })]);
 
         g.append("g")
-            .attr("transform", "translate(0," + height + ")")
+            .attr("transform", "translate(0," + (height) + ")")
             .call(d3.axisBottom(x));
 
         g.append("g")
@@ -195,12 +196,12 @@ $(document).ready(function () {
             .text("Frequency");
 
         svg.append("text")
-            .attr("x", (width / 1.8))             
+            .attr("x", (width / 1.9))             
             .attr("y", margin.top / 2)
             .attr("text-anchor", "middle")  
-            .style("font-size", "16px")  
+            .style("font-size", "16px") 
             .style('font-family', '"Montserrat", sans-serif')
-            .text("Murders Committed per Perpetrator's Age");
+            .text("Crimes Committed Based on Perpetrator's Age");
 
         g.selectAll(".bar")
             .data(data)
