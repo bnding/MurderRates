@@ -26,16 +26,11 @@
 					"#3B0D11",
 					"#EDAE49",
 					"#FDFFFC"
-
-
-
-
 				]);
-
 			var chart = new CanvasJS.Chart("chartContainer",
 				{
 					colorSet: "theme",
-					width: 800,
+					width: 1000,
 					height: 350,
 					backgroundColor: "#DCE0D9",
 					animationEnabled: true,
@@ -46,7 +41,9 @@
 						text: "Weapons Used Based on Perpetrator Sex",
 					},
 					axisX: {
+						labelAngle: -45,
 						gridThickness: 0,
+						labelFontSize: 10,
 						fontFamily: "Montserrat",
 						title: "Weapons",
 					},
@@ -90,6 +87,7 @@
 						text: "Weapons Used Based on Perpetrator Relationship",
 					},
 					axisX: {
+						labelAngle: -45,
 						gridThickness: 0,
 						fontFamily: "Montserrat",
 						title: "Weapons",
@@ -111,6 +109,15 @@
 						},
 						{
 							indexLabelFontFamily: "Montserrat",
+							legendText: "Brother",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 400, "label": "Blunt Object" }, { "y": 2096, "label": "Strangulation" }, { "y": 485, "label": "Rifle" }, { "y": 1446, "label": "Knife" }, { "y": 191, "label": "Firearm" }, { "y": 642, "label": "Shotgun" }, { "y": 2, "label": "Fall" }, { "y": 2096, "label": "Handgun" }, { "y": 9, "label": "Drowning" }, { "y": 17, "label": "Suffocation" }, { "y": 10, "label": "Explosives" }, { "y": 63, "label": "Fire" }, { "y": 21, "label": "Drugs" }, { "y": 21, "label": "Gun" }, { "y": 63, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
 							legendText: "Friend",
 							type: "stackedColumn",
 							showInLegend: "true",
@@ -129,12 +136,30 @@
 						},
 						{
 							indexLabelFontFamily: "Montserrat",
+							legendText: "Boyfriend",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 72, "label": "Blunt Object" }, { "y": 20, "label": "Strangulation" }, { "y": 195, "label": "Rifle" }, { "y": 3595, "label": "Knife" }, { "y": 135, "label": "Firearm" }, { "y": 263, "label": "Shotgun" }, { "y": 2, "label": "Fall" }, { "y": 3595, "label": "Handgun" }, { "y": 0, "label": "Drowning" }, { "y": 11, "label": "Suffocation" }, { "y": 5, "label": "Explosives" }, { "y": 5, "label": "Fire" }, { "y": 33, "label": "Drugs" }, { "y": 13, "label": "Gun" }, { "y": 42, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
 							legendText: "Husband",
 							type: "stackedColumn",
 							showInLegend: "true",
 							//color: "Green",
 							dataPoints:
 								[{ "y": 208, "label": "Blunt Object" }, { "y": 23, "label": "Strangulation" }, { "y": 518, "label": "Rifle" }, { "y": 1974, "label": "Knife" }, { "y": 239, "label": "Firearm" }, { "y": 618, "label": "Shotgun" }, { "y": 1, "label": "Fall" }, { "y": 4762, "label": "Handgun" }, { "y": 1, "label": "Drowning" }, { "y": 16, "label": "Suffocation" }, { "y": 6, "label": "Explosives" }, { "y": 60, "label": "Fire" }, { "y": 52, "label": "Drugs" }, { "y": 15, "label": "Gun" }, { "y": 31, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
+							legendText: "Wife",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 2461, "label": "Blunt Object" }, { "y": 500, "label": "Strangulation" }, { "y": 1432, "label": "Rifle" }, { "y": 3268, "label": "Knife" }, { "y": 990, "label": "Firearm" }, { "y": 2259, "label": "Shotgun" }, { "y": 7, "label": "Fall" }, { "y": 10982, "label": "Handgun" }, { "y": 39, "label": "Drowning" }, { "y": 207, "label": "Suffocation" }, { "y": 10, "label": "Explosives" }, { "y": 148, "label": "Fire" }, { "y": 72, "label": "Drugs" }, { "y": 44, "label": "Gun" }, { "y": 44, "label": "Poison" }]
 						},
 						{
 							indexLabelFontFamily: "Montserrat",
@@ -156,12 +181,48 @@
 						},
 						{
 							indexLabelFontFamily: "Montserrat",
+							legendText: "Daughter",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 2965, "label": "Blunt Object" }, { "y": 130, "label": "Strangulation" }, { "y": 137, "label": "Rifle" }, { "y": 428, "label": "Knife" }, { "y": 113, "label": "Firearm" }, { "y": 104, "label": "Shotgun" }, { "y": 7, "label": "Fall" }, { "y": 1119, "label": "Handgun" }, { "y": 254, "label": "Drowning" }, { "y": 545, "label": "Suffocation" }, { "y": 20, "label": "Explosives" }, { "y": 315, "label": "Fire" }, { "y": 189, "label": "Drugs" }, { "y": 4, "label": "Gun" }, { "y": 44, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
 							legendText: "Son",
 							type: "stackedColumn",
 							showInLegend: "true",
 							//color: "Blue",
 							dataPoints:
 								[{ "y": 3652, "label": "Blunt Object" }, { "y": 95, "label": "Strangulation" }, { "y": 360, "label": "Rifle" }, { "y": 591, "label": "Knife" }, { "y": 166, "label": "Firearm" }, { "y": 21, "label": "Shotgun" }, { "y": 20, "label": "Fall" }, { "y": 1875, "label": "Handgun" }, { "y": 302, "label": "Drowning" }, { "y": 590, "label": "Suffocation" }, { "y": 4, "label": "Explosives" }, { "y": 279, "label": "Fire" }, { "y": 134, "label": "Drugs" }, { "y": 21, "label": "Gun" }, { "y": 56, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
+							legendText: "Employee",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 55, "label": "Blunt Object" }, { "y": 7, "label": "Strangulation" }, { "y": 21, "label": "Rifle" }, { "y": 52, "label": "Knife" }, { "y": 11, "label": "Firearm" }, { "y": 27, "label": "Shotgun" }, { "y": 0, "label": "Fall" }, { "y": 172, "label": "Handgun" }, { "y": 1, "label": "Drowning" }, { "y": 4, "label": "Suffocation" }, { "y": 7, "label": "Explosives" }, { "y": 3, "label": "Fire" }, { "y": 0, "label": "Drugs" }, { "y": 1, "label": "Gun" }, { "y": 0, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
+							legendText: "Employer",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 0, "label": "Blunt Object" }, { "y": 19, "label": "Strangulation" }, { "y": 23, "label": "Rifle" }, { "y": 97, "label": "Knife" }, { "y": 16, "label": "Firearm" }, { "y": 29, "label": "Shotgun" }, { "y": 0, "label": "Fall" }, { "y": 235, "label": "Handgun" }, { "y": 0, "label": "Drowning" }, { "y": 3, "label": "Suffocation" }, { "y": 0, "label": "Explosives" }, { "y": 2, "label": "Fire" }, { "y": 3, "label": "Drugs" }, { "y": 0, "label": "Gun" }, { "y": 1, "label": "Poison" }]
+						},
+						{
+							indexLabelFontFamily: "Montserrat",
+							legendText: "Stranger",
+							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
+							dataPoints:
+								[{ "y": 8358, "label": "Blunt Object" }, { "y": 712, "label": "Strangulation" }, { "y": 3656, "label": "Rifle" }, { "y": 11602, "label": "Knife" }, { "y": 4217, "label": "Firearm" }, { "y": 4372, "label": "Shotgun" }, { "y": 7, "label": "Fall" }, { "y": 58858, "label": "Handgun" }, { "y": 56, "label": "Drowning" }, { "y": 299, "label": "Suffocation" }, { "y": 190, "label": "Explosives" }, { "y": 743, "label": "Fire" }, { "y": 75, "label": "Drugs" }, { "y": 228, "label": "Gun" }, { "y": 14, "label": "Poison" }]
 						}
 					]
 				});
@@ -179,6 +240,7 @@
 						text: "Weapons Used Based on Perpetrator's Race",
 					},
 					axisX: {
+						labelAngle: -45,
 						gridThickness: 0,
 						fontFamily: "Montserrat",
 						title: "Weapons",
