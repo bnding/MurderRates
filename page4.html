@@ -2,16 +2,52 @@
 <html>
 
 <head>
-		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans:300|Roboto|Stylish" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-		<script src = "js/d3-tip.js" type="text/javascript"></script>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script type="text/javascript" src="js/code4.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans:300|Roboto|Stylish" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<script src="js/d3-tip.js" type="text/javascript"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script type="text/javascript" src="js/code4.js"></script>
+
+	<script type="text/javascript">
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer",
+				{
+					title: {
+						text: "Weapons Used Based on Perpetrator Sex"
+					},
+					axisX: {
+						title: "Weapons",
+
+					},
+					axisY: {
+						title: "Frequency",
+					},
+					data: [
+						{
+							legendText: "Female",
+							type: "stackedColumn",
+							dataPoints:
+								[{ "y": 67337, "label": "Blunt Object" }, { "y": 8110, "label": "Strangulation" }, { "y": 33192, "label": "Unknown" }, { "y": 23347, "label": "Rifle" }, { "y": 94962, "label": "Knife" }, { "y": 46980, "label": "Firearm" }, { "y": 30722, "label": "Shotgun" }, { "y": 190, "label": "Fall" }, { "y": 317484, "label": "Handgun" }, { "y": 1204, "label": "Drowning" }, { "y": 3968, "label": "Suffocation" }, { "y": 537, "label": "Explosives" }, { "y": 6173, "label": "Fire" }, { "y": 1588, "label": "Drugs" }, { "y": 2206, "label": "Gun" }, { "y": 454, "label": "Poison" }]
+						},
+						{
+							legendText: "male",
+							type: "stackedColumn",
+							dataPoints:
+								[{ "y": 67337, "label": "Blunt Object" }, { "y": 8110, "label": "Strangulation" }, { "y": 33192, "label": "Unknown" }, { "y": 23347, "label": "Rifle" }, { "y": 94962, "label": "Knife" }, { "y": 46980, "label": "Firearm" }, { "y": 30722, "label": "Shotgun" }, { "y": 190, "label": "Fall" }, { "y": 317484, "label": "Handgun" }, { "y": 1204, "label": "Drowning" }, { "y": 3968, "label": "Suffocation" }, { "y": 537, "label": "Explosives" }, { "y": 6173, "label": "Fire" }, { "y": 1588, "label": "Drugs" }, { "y": 2206, "label": "Gun" }, { "y": 454, "label": "Poison" }]
+						}
+					]
+				});
+
+			chart.render();
+		}
+	</script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
 
 </head>
 
@@ -35,7 +71,8 @@
 
 	<body>
 		<div id="bargraph">
-			<svg width="800" height="320"></svg>
+			<div id="chartContainer" style="height: 300px; width: 100%;">
+			</div>
 		</div>
 
 
