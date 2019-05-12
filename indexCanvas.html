@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+      text: "Weapons Used Based on Perpetrator Sex"
+      },
+      axisX:{
+      title:"Weapons",
+
+      }, 
+      axisY:{
+      title:"Frequency",
+      }, 
+        data: [
+      {
+        legendText: "Female",
+        type: "stackedColumn",
+        dataPoints: [{"y": 258, "label": "Rifle"}, {"y": 131, "label": "Shotgun"}, {"y": 322, "label": "Blunt Object"}, {"y": 332, "label": "Knife"}, {"y": 775, "label": "Handgun"}, {"y": 133, "label": "Unknown"}, {"y": 30, "label": "Fire"}, {"y": 43, "label": "Suffocation"}, {"y": 40, "label": "Strangulation"}, {"y": 141, "label": "Firearm"}, {"y": 12, "label": "Drugs"}, {"y": 14, "label": "Drowning"}, {"y": 4, "label": "Fall"}, {"y": 8, "label": "Gun"}, {"y": 2, "label": "Poison"}, {"y": 2, "label": "Explosives"}]
+      }, 
+      {
+        legendText: "male",
+        type: "stackedColumn",
+        dataPoints: [{"y": 258, "label": "Rifle"}, {"y": 131, "label": "Shotgun"}, {"y": 322, "label": "Blunt Object"}, {"y": 332, "label": "Knife"}, {"y": 775, "label": "Handgun"}, {"y": 133, "label": "Unknown"}, {"y": 30, "label": "Fire"}, {"y": 43, "label": "Suffocation"}, {"y": 40, "label": "Strangulation"}, {"y": 141, "label": "Firearm"}, {"y": 12, "label": "Drugs"}, {"y": 14, "label": "Drowning"}, {"y": 4, "label": "Fall"}, {"y": 8, "label": "Gun"}, {"y": 2, "label": "Poison"}, {"y": 2, "label": "Explosives"}]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
