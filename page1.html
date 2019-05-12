@@ -117,8 +117,9 @@
 	</div>
 
 	<div class="graph">
+		<h3> Crimes Committed by State </h3>
 		<div>
-			<svg class="map" width="960" height="600"></svg>
+			<svg class="map" width="980" height="600"></svg>
 		</div>
 		<div>
 			<p>stuff</p>
@@ -190,11 +191,6 @@
 				.attr("class", "state-borders")
 				.attr("d", path(topojson.mesh(us, us.objects.states, function (a, b) { return a !== b; })));
 
-			svg.append("text")           
-            .attr("text-anchor", "middle")  
-            .style("font-size", "16px") 
-            .style('font-family', '"Montserrat", sans-serif')
-            .text("Crimes Committed by State");
 		});
 
 	</script>
