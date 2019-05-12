@@ -118,7 +118,7 @@
 
 	<div class="graph">
 		<div>
-			<svg width="960" height="600"></svg>
+			<svg class="map" width="960" height="600"></svg>
 		</div>
 		<div>
 			<p>stuff</p>
@@ -132,7 +132,7 @@
 </body>
 <script>
 
-		var svg = d3.select("svg");
+		var svg = d3.select(".map");
 		var path = d3.geoPath();
 		var stateNames = d3.map();
 		var stateMurders = d3.map();
