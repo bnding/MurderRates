@@ -190,9 +190,7 @@
 				.attr("class", "state-borders")
 				.attr("d", path(topojson.mesh(us, us.objects.states, function (a, b) { return a !== b; })));
 
-			svg.append("text")
-            .attr("x", (width / 1.9))             
-            .attr("y", margin.top / 2)
+			svg.append("text")           
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style('font-family', '"Montserrat", sans-serif')
