@@ -17,28 +17,44 @@
 		window.onload = function () {
 			var chart = new CanvasJS.Chart("chartContainer",
 				{
+					width:800,
+					height: 350,
+					backgroundColor: "#DCE0D9",
+					animationEnabled: true, 
+					animationDuration: 2000,
 					title: {
-						text: "Weapons Used Based on Perpetrator Sex"
+						fontSize: 25,
+						fontFamily: "Montserrat",
+						text: "Weapons Used Based on Perpetrator Sex",
 					},
 					axisX: {
+						gridThickness:0,
+						fontFamily: "Montserrat",
 						title: "Weapons",
-
 					},
 					axisY: {
+						gridThickness:0,
 						title: "Frequency",
+						maximum: 200000
 					},
 					data: [
 						{
+							indexLabelFontFamily: "Montserrat",
 							legendText: "Female",
 							type: "stackedColumn",
+							showInLegend: "true",
+							color: "Black",
 							dataPoints:
-								[{ "y": 67337, "label": "Blunt Object" }, { "y": 8110, "label": "Strangulation" }, { "y": 33192, "label": "Unknown" }, { "y": 23347, "label": "Rifle" }, { "y": 94962, "label": "Knife" }, { "y": 46980, "label": "Firearm" }, { "y": 30722, "label": "Shotgun" }, { "y": 190, "label": "Fall" }, { "y": 317484, "label": "Handgun" }, { "y": 1204, "label": "Drowning" }, { "y": 3968, "label": "Suffocation" }, { "y": 537, "label": "Explosives" }, { "y": 6173, "label": "Fire" }, { "y": 1588, "label": "Drugs" }, { "y": 2206, "label": "Gun" }, { "y": 454, "label": "Poison" }]
+								[{ "y": 5722, "label": "Blunt Object" }, { "y": 390, "label": "Strangulation" }, { "y": 1450, "label": "Rifle" }, { "y": 13748, "label": "Knife" }, { "y": 1287, "label": "Firearm" }, { "y": 1733, "label": "Shotgun" }, { "y": 29, "label": "Fall" }, { "y": 17107, "label": "Handgun" }, { "y": 507, "label": "Drowning" }, { "y": 1051, "label": "Suffocation" }, { "y": 33, "label": "Explosives" }, { "y": 1000, "label": "Fire" }, { "y": 569, "label": "Drugs" }, { "y": 84, "label": "Gun" }, { "y": 155, "label": "Poison" }]
 						},
 						{
+							indexLabelFontFamily: "Montserrat",
 							legendText: "Male",
 							type: "stackedColumn",
+							showInLegend: "true",
+							color: "#9E0000",
 							dataPoints:
-								[{ "y": 67337, "label": "Blunt Object" }, { "y": 8110, "label": "Strangulation" }, { "y": 33192, "label": "Unknown" }, { "y": 23347, "label": "Rifle" }, { "y": 94962, "label": "Knife" }, { "y": 46980, "label": "Firearm" }, { "y": 30722, "label": "Shotgun" }, { "y": 190, "label": "Fall" }, { "y": 317484, "label": "Handgun" }, { "y": 1204, "label": "Drowning" }, { "y": 3968, "label": "Suffocation" }, { "y": 537, "label": "Explosives" }, { "y": 6173, "label": "Fire" }, { "y": 1588, "label": "Drugs" }, { "y": 2206, "label": "Gun" }, { "y": 454, "label": "Poison" }]
+								[{ "y": 45782, "label": "Blunt Object" }, { "y": 4019, "label": "Strangulation" }, { "y": 18486, "label": "Rifle" }, { "y": 61015, "label": "Knife" }, { "y": 23103, "label": "Firearm" }, { "y": 24307, "label": "Shotgun" }, { "y": 137, "label": "Fall" }, { "y": 199776, "label": "Handgun" }, { "y": 492, "label": "Drowning" }, { "y": 1927, "label": "Suffocation" }, { "y": 355, "label": "Explosives" }, { "y": 3132, "label": "Fire" }, { "y": 827, "label": "Drugs" }, { "y": 1240, "label": "Gun" }, { "y": 221, "label": "Poison" }]
 						}
 					]
 				});
@@ -71,7 +87,7 @@
 
 	<body>
 		<div id="bargraph">
-			<div id="chartContainer" style="height: 300px; width: 100%;">
+			<div id="chartContainer" style="height: 400px; width: 100%;">
 			</div>
 		</div>
 
