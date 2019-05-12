@@ -22,10 +22,9 @@
 					"#F93943",
 					"#7EB2DD",
 					"#445E93",
-					"#01161E",
-					"#3B0D11",
-					"#EDAE49",
-					"#FDFFFC"
+					"#75DBCD",
+					"#C9DBBA"
+
 				]);
 			var chart = new CanvasJS.Chart("chartContainer",
 				{
@@ -53,13 +52,16 @@
 						title: "Frequency",
 						maximum: 200000
 					},
+					legend: {
+						verticalAlign: "center",
+						horizontalAlign: "right"
+					},
 					data: [
 						{
 							indexLabelFontFamily: "Montserrat",
 							legendText: "Female",
 							type: "stackedColumn",
 							showInLegend: "true",
-							// color: "Black",
 							dataPoints:
 								[{ "y": 5722, "label": "Blunt Object" }, { "y": 390, "label": "Strangulation" }, { "y": 1450, "label": "Rifle" }, { "y": 13748, "label": "Knife" }, { "y": 1287, "label": "Firearm" }, { "y": 1733, "label": "Shotgun" }, { "y": 29, "label": "Fall" }, { "y": 17107, "label": "Handgun" }, { "y": 507, "label": "Drowning" }, { "y": 1051, "label": "Suffocation" }, { "y": 33, "label": "Explosives" }, { "y": 1000, "label": "Fire" }, { "y": 569, "label": "Drugs" }, { "y": 84, "label": "Gun" }, { "y": 155, "label": "Poison" }]
 						},
@@ -99,13 +101,16 @@
 						title: "Frequency",
 						maximum: 25000
 					},
+					legend: {
+						verticalAlign: "center",
+						horizontalAlign: "right"
+					},
 					data: [
 						{
 							indexLabelFontFamily: "Montserrat",
 							legendText: "Father",
 							type: "stackedColumn",
 							showInLegend: "true",
-							// color: "Black",
 							dataPoints:
 								[{ "y": 678, "label": "Blunt Object" }, { "y": 29, "label": "Strangulation" }, { "y": 456, "label": "Rifle" }, { "y": 939, "label": "Knife" }, { "y": 114, "label": "Firearm" }, { "y": 581, "label": "Shotgun" }, { "y": 0, "label": "Fall" }, { "y": 1282, "label": "Handgun" }, { "y": 0, "label": "Drowning" }, { "y": 31, "label": "Suffocation" }, { "y": 2, "label": "Explosives" }, { "y": 65, "label": "Fire" }, { "y": 10, "label": "Drugs" }, { "y": 5, "label": "Gun" }, { "y": 3, "label": "Poison" }]
 						},
@@ -114,7 +119,6 @@
 							legendText: "Brother",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
 							dataPoints:
 								[{ "y": 400, "label": "Blunt Object" }, { "y": 2096, "label": "Strangulation" }, { "y": 485, "label": "Rifle" }, { "y": 1446, "label": "Knife" }, { "y": 191, "label": "Firearm" }, { "y": 642, "label": "Shotgun" }, { "y": 2, "label": "Fall" }, { "y": 2096, "label": "Handgun" }, { "y": 9, "label": "Drowning" }, { "y": 17, "label": "Suffocation" }, { "y": 10, "label": "Explosives" }, { "y": 63, "label": "Fire" }, { "y": 21, "label": "Drugs" }, { "y": 21, "label": "Gun" }, { "y": 63, "label": "Poison" }]
 						},
@@ -123,7 +127,6 @@
 							legendText: "Friend",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "#9E0000",
 							dataPoints:
 								[{ "y": 678, "label": "Blunt Object" }, { "y": 246, "label": "Strangulation" }, { "y": 1267, "label": "Rifle" }, { "y": 4657, "label": "Knife" }, { "y": 904, "label": "Firearm" }, { "y": 1607, "label": "Shotgun" }, { "y": 8, "label": "Fall" }, { "y": 9685, "label": "Handgun" }, { "y": 42, "label": "Drowning" }, { "y": 80, "label": "Suffocation" }, { "y": 12, "label": "Explosives" }, { "y": 111, "label": "Fire" }, { "y": 178, "label": "Drugs" }, { "y": 52, "label": "Gun" }, { "y": 10, "label": "Poison" }]
 						},
@@ -132,7 +135,6 @@
 							legendText: "Girlfriend",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Yellow",
 							dataPoints:
 								[{ "y": 2523, "label": "Blunt Object" }, { "y": 525, "label": "Strangulation" }, { "y": 613, "label": "Rifle" }, { "y": 3399, "label": "Knife" }, { "y": 567, "label": "Firearm" }, { "y": 958, "label": "Shotgun" }, { "y": 12, "label": "Fall" }, { "y": 6654, "label": "Handgun" }, { "y": 15, "label": "Drowning" }, { "y": 190, "label": "Suffocation" }, { "y": 4, "label": "Explosives" }, { "y": 135, "label": "Fire" }, { "y": 62, "label": "Drugs" }, { "y": 38, "label": "Gun" }, { "y": 10, "label": "Poison" }]
 						},
@@ -141,7 +143,6 @@
 							legendText: "Boyfriend",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
 							dataPoints:
 								[{ "y": 72, "label": "Blunt Object" }, { "y": 20, "label": "Strangulation" }, { "y": 195, "label": "Rifle" }, { "y": 3595, "label": "Knife" }, { "y": 135, "label": "Firearm" }, { "y": 263, "label": "Shotgun" }, { "y": 2, "label": "Fall" }, { "y": 3595, "label": "Handgun" }, { "y": 0, "label": "Drowning" }, { "y": 11, "label": "Suffocation" }, { "y": 5, "label": "Explosives" }, { "y": 5, "label": "Fire" }, { "y": 33, "label": "Drugs" }, { "y": 13, "label": "Gun" }, { "y": 42, "label": "Poison" }]
 						},
@@ -150,7 +151,6 @@
 							legendText: "Husband",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Green",
 							dataPoints:
 								[{ "y": 208, "label": "Blunt Object" }, { "y": 23, "label": "Strangulation" }, { "y": 518, "label": "Rifle" }, { "y": 1974, "label": "Knife" }, { "y": 239, "label": "Firearm" }, { "y": 618, "label": "Shotgun" }, { "y": 1, "label": "Fall" }, { "y": 4762, "label": "Handgun" }, { "y": 1, "label": "Drowning" }, { "y": 16, "label": "Suffocation" }, { "y": 6, "label": "Explosives" }, { "y": 60, "label": "Fire" }, { "y": 52, "label": "Drugs" }, { "y": 15, "label": "Gun" }, { "y": 31, "label": "Poison" }]
 						},
@@ -159,7 +159,6 @@
 							legendText: "Wife",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
 							dataPoints:
 								[{ "y": 2461, "label": "Blunt Object" }, { "y": 500, "label": "Strangulation" }, { "y": 1432, "label": "Rifle" }, { "y": 3268, "label": "Knife" }, { "y": 990, "label": "Firearm" }, { "y": 2259, "label": "Shotgun" }, { "y": 7, "label": "Fall" }, { "y": 10982, "label": "Handgun" }, { "y": 39, "label": "Drowning" }, { "y": 207, "label": "Suffocation" }, { "y": 10, "label": "Explosives" }, { "y": 148, "label": "Fire" }, { "y": 72, "label": "Drugs" }, { "y": 44, "label": "Gun" }, { "y": 44, "label": "Poison" }]
 						},
@@ -168,7 +167,6 @@
 							legendText: "Mother",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Purple",
 							dataPoints:
 								[{ "y": 6, "label": "Blunt Object" }, { "y": 112, "label": "Strangulation" }, { "y": 302, "label": "Rifle" }, { "y": 1122, "label": "Knife" }, { "y": 90, "label": "Firearm" }, { "y": 13, "label": "Shotgun" }, { "y": 1, "label": "Fall" }, { "y": 871, "label": "Handgun" }, { "y": 6, "label": "Drowning" }, { "y": 75, "label": "Suffocation" }, { "y": 2, "label": "Explosives" }, { "y": 106, "label": "Fire" }, { "y": 29, "label": "Drugs" }, { "y": 13, "label": "Gun" }, { "y": 15, "label": "Poison" }]
 						},
@@ -177,7 +175,6 @@
 							legendText: "Neighbor",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Gray",
 							dataPoints:
 								[{ "y": 773, "label": "Blunt Object" }, { "y": 590, "label": "Strangulation" }, { "y": 586, "label": "Rifle" }, { "y": 1368, "label": "Knife" }, { "y": 130, "label": "Firearm" }, { "y": 13, "label": "Shotgun" }, { "y": 2, "label": "Fall" }, { "y": 2210, "label": "Handgun" }, { "y": 12, "label": "Drowning" }, { "y": 38, "label": "Suffocation" }, { "y": 4, "label": "Explosives" }, { "y": 196, "label": "Fire" }, { "y": 6, "label": "Drugs" }, { "y": 13, "label": "Gun" }, { "y": 2, "label": "Poison" }]
 						},
@@ -186,7 +183,7 @@
 							legendText: "Daughter",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
+							color: "#C9DBBA",
 							dataPoints:
 								[{ "y": 2965, "label": "Blunt Object" }, { "y": 130, "label": "Strangulation" }, { "y": 137, "label": "Rifle" }, { "y": 428, "label": "Knife" }, { "y": 113, "label": "Firearm" }, { "y": 104, "label": "Shotgun" }, { "y": 7, "label": "Fall" }, { "y": 1119, "label": "Handgun" }, { "y": 254, "label": "Drowning" }, { "y": 545, "label": "Suffocation" }, { "y": 20, "label": "Explosives" }, { "y": 315, "label": "Fire" }, { "y": 189, "label": "Drugs" }, { "y": 4, "label": "Gun" }, { "y": 44, "label": "Poison" }]
 						},
@@ -195,7 +192,6 @@
 							legendText: "Son",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Blue",
 							dataPoints:
 								[{ "y": 3652, "label": "Blunt Object" }, { "y": 95, "label": "Strangulation" }, { "y": 360, "label": "Rifle" }, { "y": 591, "label": "Knife" }, { "y": 166, "label": "Firearm" }, { "y": 21, "label": "Shotgun" }, { "y": 20, "label": "Fall" }, { "y": 1875, "label": "Handgun" }, { "y": 302, "label": "Drowning" }, { "y": 590, "label": "Suffocation" }, { "y": 4, "label": "Explosives" }, { "y": 279, "label": "Fire" }, { "y": 134, "label": "Drugs" }, { "y": 21, "label": "Gun" }, { "y": 56, "label": "Poison" }]
 						},
@@ -204,7 +200,6 @@
 							legendText: "Employee",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
 							dataPoints:
 								[{ "y": 55, "label": "Blunt Object" }, { "y": 7, "label": "Strangulation" }, { "y": 21, "label": "Rifle" }, { "y": 52, "label": "Knife" }, { "y": 11, "label": "Firearm" }, { "y": 27, "label": "Shotgun" }, { "y": 0, "label": "Fall" }, { "y": 172, "label": "Handgun" }, { "y": 1, "label": "Drowning" }, { "y": 4, "label": "Suffocation" }, { "y": 7, "label": "Explosives" }, { "y": 3, "label": "Fire" }, { "y": 0, "label": "Drugs" }, { "y": 1, "label": "Gun" }, { "y": 0, "label": "Poison" }]
 						},
@@ -213,16 +208,15 @@
 							legendText: "Employer",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
 							dataPoints:
 								[{ "y": 0, "label": "Blunt Object" }, { "y": 19, "label": "Strangulation" }, { "y": 23, "label": "Rifle" }, { "y": 97, "label": "Knife" }, { "y": 16, "label": "Firearm" }, { "y": 29, "label": "Shotgun" }, { "y": 0, "label": "Fall" }, { "y": 235, "label": "Handgun" }, { "y": 0, "label": "Drowning" }, { "y": 3, "label": "Suffocation" }, { "y": 0, "label": "Explosives" }, { "y": 2, "label": "Fire" }, { "y": 3, "label": "Drugs" }, { "y": 0, "label": "Gun" }, { "y": 1, "label": "Poison" }]
 						},
 						{
 							indexLabelFontFamily: "Montserrat",
 							legendText: "Stranger",
+							color: "#75DBCD",
 							type: "stackedColumn",
 							showInLegend: "true",
-							color: "Black",
 							dataPoints:
 								[{ "y": 8358, "label": "Blunt Object" }, { "y": 712, "label": "Strangulation" }, { "y": 3656, "label": "Rifle" }, { "y": 11602, "label": "Knife" }, { "y": 4217, "label": "Firearm" }, { "y": 4372, "label": "Shotgun" }, { "y": 7, "label": "Fall" }, { "y": 58858, "label": "Handgun" }, { "y": 56, "label": "Drowning" }, { "y": 299, "label": "Suffocation" }, { "y": 190, "label": "Explosives" }, { "y": 743, "label": "Fire" }, { "y": 75, "label": "Drugs" }, { "y": 228, "label": "Gun" }, { "y": 14, "label": "Poison" }]
 						}
@@ -253,13 +247,16 @@
 						title: "Frequency",
 						maximum: 380000
 					},
+					legend: {
+						verticalAlign: "center",
+						horizontalAlign: "right"
+					},
 					data: [
 						{
 							indexLabelFontFamily: "Montserrat",
 							legendText: "White",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Black",
 							dataPoints:
 								[{ "y": 29170, "label": "Blunt Object" }, { "y": 15890, "label": "Strangulation" }, { "y": 1982, "label": "Unknown" }, { "y": 13023, "label": "Rifle" }, { "y": 36322, "label": "Knife" }, { "y": 9336, "label": "Firearm" }, { "y": 15890, "label": "Shotgun" }, { "y": 85, "label": "Fall" }, { "y": 93662, "label": "Handgun" }, { "y": 660, "label": "Drowning" }, { "y": 1982, "label": "Suffocation" }, { "y": 298, "label": "Explosives" }, { "y": 2281, "label": "Fire" }, { "y": 1190, "label": "Drugs" }, { "y": 85, "label": "Gun" }, { "y": 294, "label": "Poison" }]
 						},
@@ -268,7 +265,6 @@
 							legendText: "Unknown",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Blue",
 							dataPoints:
 								[{ "y": 16326, "label": "Blunt Object" }, { "y": 15090, "label": "Strangulation" }, { "y": 1016, "label": "Unknown" }, { "y": 3598, "label": "Rifle" }, { "y": 21065, "label": "Knife" }, { "y": 23019, "label": "Firearm" }, { "y": 4899, "label": "Shotgun" }, { "y": 25, "label": "Fall" }, { "y": 103565, "label": "Handgun" }, { "y": 221, "label": "Drowning" }, { "y": 1016, "label": "Suffocation" }, { "y": 155, "label": "Explosives" }, { "y": 2088, "label": "Fire" }, { "y": 203, "label": "Drugs" }, { "y": 918, "label": "Gun" }, { "y": 84, "label": "Poison" }]
 						},
@@ -277,7 +273,6 @@
 							legendText: "Black",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Green",
 							dataPoints:
 								[{ "y": 20400, "label": "Blunt Object" }, { "y": 1466, "label": "Strangulation" }, { "y": 6937, "label": "Unknown" }, { "y": 6135, "label": "Rifle" }, { "y": 35393, "label": "Knife" }, { "y": 14296, "label": "Firearm" }, { "y": 9512, "label": "Shotgun" }, { "y": 73, "label": "Fall" }, { "y": 116477, "label": "Handgun" }, { "y": 276, "label": "Drowning" }, { "y": 855, "label": "Suffocation" }, { "y": 75, "label": "Explosives" }, { "y": 1679, "label": "Fire" }, { "y": 167, "label": "Drugs" }, { "y": 710, "label": "Gun" }, { "y": 63, "label": "Poison" }]
 						},
@@ -286,7 +281,6 @@
 							legendText: "Asian",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Yellow",
 							dataPoints:
 								[{ "y": 676, "label": "Blunt Object" }, { "y": 95, "label": "Strangulation" }, { "y": 223, "label": "Unknown" }, { "y": 242, "label": "Rifle" }, { "y": 1136, "label": "Knife" }, { "y": 258, "label": "Firearm" }, { "y": 219, "label": "Shotgun" }, { "y": 5, "label": "Fall" }, { "y": 2976, "label": "Handgun" }, { "y": 26, "label": "Drowning" }, { "y": 67, "label": "Suffocation" }, { "y": 9, "label": "Explosives" }, { "y": 80, "label": "Fire" }, { "y": 15, "label": "Drugs" }, { "y": 9, "label": "Gun" }, { "y": 10, "label": "Poison" }]
 						},
@@ -295,7 +289,6 @@
 							legendText: "Native American/Alaska Native",
 							type: "stackedColumn",
 							showInLegend: "true",
-							//color: "Pink",
 							dataPoints:
 								[{ "y": 765, "label": "Blunt Object" }, { "y": 40, "label": "Strangulation" }, { "y": 160, "label": "Unknown" }, { "y": 349, "label": "Rifle" }, { "y": 1044, "label": "Knife" }, { "y": 71, "label": "Firearm" }, { "y": 202, "label": "Shotgun" }, { "y": 2, "label": "Fall" }, { "y": 804, "label": "Handgun" }, { "y": 21, "label": "Drowning" }, { "y": 48, "label": "Suffocation" }, { "y": 0, "label": "Explosives" }, { "y": 45, "label": "Fire" }, { "y": 13, "label": "Drugs" }, { "y": 26, "label": "Gun" }, { "y": 3, "label": "Poison" }]
 						}
@@ -307,7 +300,7 @@
 		}
 	</script>
 
-	
+
 </head>
 
 </head>
@@ -329,39 +322,58 @@
 	</div>
 
 	</head>
-		<div class="bargraph">
-			<div id="chartContainer" style="height: 400px; width: 100%;">
-			</div>
-		</div>
-		<div>
-			<p>This graph seems to show that males commit more murders than females in general and use each particular weapon more frequently. 
-			It is quite surprising that the number of murders committed through a gun is low because most of the crimes we see happen today are 
-			almost all done by guns (as seen through the media).  However, this is different from a handgun because men are more likely to own handguns 
-			rather than weapons that are considered far more dangerous.  We also knew that knife would most likely be the second most popular weapon 
-			amongst males because it is easily accessible and convenient.</p>
-		</div>
-		<div class="bargraph">
-			<div id="chartContainer2" style="height: 400px; width: 100%;">
-			</div>
-		</div>
-		<div>
-			<p>This bar graph depicts the frequency of various weapons used to commit the crimes based on the  perpetrators’ relationships with the victims. 
-			Interestingly, boyfriend, girlfriend, and friend seem to be highest relationships involved in crimes. For crimes committed involving 
-			handguns, friends were involved with more crimes, but following closely behind are girlfriends. Murders using blunt objects as weapons 
-			are where boyfriend relationships shows the peak for this particular relationship. In general, friends, boyfriends, and girlfriends have been 
-			involved with many crimes more than the other relationships. </p>
-		</div>
-		<div class="bargraph">
-			<div id="chartContainer3" style="height: 400px; width: 100%;">
-			</div>
-		</div>
-		<div>
-			<p>This stacked bar graph represents the amount of different types of weapons used based on the perpetrator’s sex. The types of sex we 
-			have included based on the data set are male and female. In general, the male sex seems to have committed more crimes than females and 
-			they have committed the most amount of crimes with a particular types of weapon than the other gender. The weapon most used with the top 
-			number of crimes is a handgun. Handguns have approximately been used in more than 200,000 crimes over these years. </p>
-		</div>
 
-	</body>
+	<img id="block1" src="images/block.png">
+	<img id="block2" src="images/block.png">
+	<img id="block3" src="images/block.png">
+	<img id="block4" src="images/block.png">
+	<img id="block5" src="images/block.png">
+	<img id="block6" src="images/block.png">
+	<div class="charts">
+		<div id="chartContainer" style="height: 400px; width: 4100px;"></div>
+		<div>
+			<p>This graph seems to show that males commit more murders than females in general and use each particular
+				weapon more frequently.
+				It is quite surprising that the number of murders committed through a gun is low because most of the
+				crimes we see happen today are
+				almost all done by guns (as seen through the media). However, this is different from a handgun because
+				men are more likely to own handguns
+				rather than weapons that are considered far more dangerous. We also knew that knife would most likely be
+				the second most popular weapon
+				amongst males because it is easily accessible and convenient.</p>
+		</div>
+	</div>
+
+	<div class="charts">
+		<div id="chartContainer2" style="height: 400px; width: 4100px;"></div>
+		<div>
+			<p>This bar graph depicts the frequency of various weapons used to commit the crimes based on the
+				perpetrators’ relationships with the victims.
+				Interestingly, boyfriend, girlfriend, and friend seem to be highest relationships involved in crimes.
+				For crimes committed involving
+				handguns, friends were involved with more crimes, but following closely behind are girlfriends. Murders
+				using blunt objects as weapons
+				are where boyfriend relationships shows the peak for this particular relationship. In general, friends,
+				boyfriends, and girlfriends have been
+				involved with many crimes more than the other relationships. </p>
+		</div>
+	</div>
+
+	<div class="charts">
+		<div id="chartContainer3" style="height: 400px; width: 3700px;"></div>
+		<div>
+			<p>This stacked bar graph represents the amount of different types of weapons used based on the
+				perpetrator’s sex. The types of sex we
+				have included based on the data set are male and female. In general, the male sex seems to have
+				committed more crimes than females and
+				they have committed the most amount of crimes with a particular types of weapon than the other gender.
+				The weapon most used with the top
+				number of crimes is a handgun. Handguns have approximately been used in more than 200,000 crimes over
+				these years. </p>
+		</div>
+	</div>
+
+
+</body>
 
 </html>
