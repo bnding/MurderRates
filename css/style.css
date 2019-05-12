@@ -70,8 +70,9 @@ div svg {
 }
 
 .charts p {
-  padding-top: 100px;
-  padding-left: 100px;
+  padding-top: 40px;
+  padding-left: 140px;
+  padding-right: 50px;
 }
 
 .bar:hover {
