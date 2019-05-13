@@ -56,18 +56,22 @@
                </div>
                <p> There was an idea...
                     <br>
+                    <br>
                     After watching a documentary of Ted Bundy on Netflix, we were intrigued by how a single man can
                     commit over 30 murders within 4 years. Ted Bundy, who was a White male serial killer in the 1980s,
                     brutally murdered and sexually assaulted White women. As a result, our venture was to research
                     murder trends particularly from the 1980s till present time which includes Ted Bundy's data.
+                    <br>
                     <br>
                     We knew we needed data that was large enough to analyze trends. Consequently we went to the boss of
                     data websites called Kaggle. In Kaggle, we searched up a data file that had enough columns and data
                     rows to analyze the trends. This particular file that we found had over 630,000 rows and 20 columns!
                     Since we had many columns in our data, coming up with trends was not that hard.
                     <br>
+                    <br>
                     We knew we wanted to work with Python and we had past experience in HTML therefore we finalized our
                     idea to create a website. However...
+                    <br>
                     <br>
                     Little did we know that Python takes quite some time to scrape large pieces of data...sigh... Each
                     trend that we ran took about four minutes each. We have a total of 18 trends. This means 72 minutes
@@ -76,11 +80,13 @@
                     correct formatting of the json files so that we can properly create our graphs in javascript. D3.js
                     is very helpful in creating graphs however is very particular with the format of the data.
                     <br>
+                    <br>
                     Another difficulty we faced was to create our first graph. We took a simple trend such as the number
                     of crimes committed per month and attempted to graph it. There were some issues with the spacing of
                     the bars on the graph as well as the ordering of the months on the x-axis. We then realized that we
                     could just order the months in python. This is one of the reasons why we had to keep running our
                     data over and over again which added up to over 9 hours of data processing.
+                    <br>
                     <br>
                     After figuring out how to create one graph, the other graphs which involved only one column became
                     pretty
@@ -94,7 +100,9 @@
                     each
                     other.
                     <br>
+                    <br>
                     But the story isn't over yet...
+                    <br>
                     <br>
                     When we graphed some trends that dealt with the "Age" column in our dataset, we ran into major
                     issues.
@@ -117,37 +125,42 @@
                     just resulted in expanding the page and making the entire page look janky. Consequently, we had to
                     scrape
                     the data and get rid of ages that did not really make sense. I mean a perpetrator at the age of 0,
-                    come
-                    on...
+                    come on...
+                    <br>
                     <br>
                     The penultimate challenge we faced was to create graphs that involved states. We thought it would be
                     fun
-                    and also cool to visualize this kind of data using a map. The map physically represents the state
-                    and the
-                    depth of the color shows the frequency. Pretty cool right?
+                    and cool to visualize this kind of data using a map. The map physically represents the state
+                    and the depth of the color shows the frequency. In other words, the darker the color, the higher the 
+                    frequency. Pretty cool right?
+                    <br>
                     <br>
                     Our last and certainly the least fun challenge was to create a graph that involves more than one
                     column.
-                    We had an idea to create a stacked bar chart to represent each data.  Since conventional bar and line graphs
+                    Through further research, we had an idea to create a stacked bar chart to represent each data.  
+                    Since conventional bar and line graphs
                     are
                     quite difficult to implement when dealing with different variables, we figured stacking the data is the best
                     way to
                     go. As a result, we imported canvas.js which handles all graphs dealing with 2 or more columns (not
                     involving states of course).
                     <br>
+                    <br>
                     Finally, styling.
+                    <br>
                     <br>
                     Styling took many exhausting hours to complete (but does not even come close to the struggle with
                     processing the data). We cannot even fathom having a website that is simply white. That is boring
                     and
                     dull. So we knew we needed the help of John Wick, a cold-blooded assassin, to be front and center.
                     For
-                    the rest of the site, we found some templates (referenced below) that helped bring some special
+                    the rest of the site, we found some templates (referenced in the README) that helped bring some special
                     effects
                     and creative styling. We did run into problems with formatting the texts next to the graphs, but
                     eventually figured it out. As an added bonus, we implemented tooltips where if you hover over the bars
                     of the graphs and even the states on the map, you'll be able to see the actual frequencies. Pretty nice,
                     right?
+                    <br>
                     <br>
                     All in all, we hope you find the trends interesting and noteworthy! Our blood, sweat, and tears went
                     into this project :)
